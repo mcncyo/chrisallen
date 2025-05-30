@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Fusion 360 on Chris allen&#39;s personal site</title>
+    <link>https://chrisallen.us/tags/fusion-360/</link>
+    <description>Recent content in Fusion 360 on Chris allen&#39;s personal site</description>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chrisallen.us/tags/fusion-360/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>A Lot Has Been Happening Lately</title>
+      <link>https://chrisallen.us/blog/newbusinessand3dprinter/</link>
+      <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>https://chrisallen.us/blog/newbusinessand3dprinter/</guid>
+      <description>Updates on my journey launching TechNest Creations, my new 3D printing business, learning Fusion 360, and exploring home automation projects.</description>
+    </item>
+  </channel>
+</rss>

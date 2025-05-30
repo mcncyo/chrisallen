@@ -1,0 +1,9 @@
+baseURL = "https://chrisallen.us/"
+languageCode = "en-us"
+title = "Chris allen's personal site"
+theme = "PaperMod"
+
+[params]
+ 
+
+  ignoreLogs = ['warning-partial-superfluous-prefix']

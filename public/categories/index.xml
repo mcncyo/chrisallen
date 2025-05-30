@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Categories on Chris allen&#39;s personal site</title>
+    <link>https://chrisallen.us/categories/</link>
+    <description>Recent content in Categories on Chris allen&#39;s personal site</description>
+    <generator>Hugo -- 0.147.6</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 24 Dec 2024 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://chrisallen.us/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://chrisallen.us/categories/blog/</link>
+      <pubDate>Tue, 24 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>https://chrisallen.us/categories/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Youtube</title>
+      <link>https://chrisallen.us/categories/youtube/</link>
+      <pubDate>Sun, 11 Sep 2022 00:00:00 -0500</pubDate>
+      <guid>https://chrisallen.us/categories/youtube/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Proxmox</title>
+      <link>https://chrisallen.us/categories/proxmox/</link>
+      <pubDate>Sat, 16 Jul 2022 00:00:00 -0500</pubDate>
+      <guid>https://chrisallen.us/categories/proxmox/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Pfsense</title>
+      <link>https://chrisallen.us/categories/pfsense/</link>
+      <pubDate>Tue, 21 Dec 2021 14:19:23 -0500</pubDate>
+      <guid>https://chrisallen.us/categories/pfsense/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
