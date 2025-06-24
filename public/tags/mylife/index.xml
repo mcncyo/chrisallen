@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Mylife on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/tags/mylife/</link>
+    <link>http://localhost:1313/tags/mylife/</link>
     <description>Recent content in Mylife on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 25 Oct 2022 01:00:02 -0500</lastBuildDate>
-    <atom:link href="https://chrisallen.us/tags/mylife/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/mylife/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Job Hunt &amp; Gig Work Update: High Pay, DoorDash, and More</title>
-      <link>https://chrisallen.us/blog/oct252022update/</link>
+      <link>http://localhost:1313/blog/oct252022update/</link>
       <pubDate>Tue, 25 Oct 2022 01:00:02 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/oct252022update/</guid>
+      <guid>http://localhost:1313/blog/oct252022update/</guid>
       <description>Currently job hunting for high-paying positions while doing gig work with DoorDash, Uber Eats, and GrubHub in West Wichita. Also improving my website and creating YouTube content. Stay tuned for updates!</description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Pfsence on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/tags/pfsence/</link>
+    <link>http://localhost:1313/tags/pfsence/</link>
     <description>Recent content in Pfsence on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 21 Dec 2021 14:19:23 -0500</lastBuildDate>
-    <atom:link href="https://chrisallen.us/tags/pfsence/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/pfsence/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Updating Tech Plans: Delaying pfSense on Proxmox, New Content</title>
-      <link>https://chrisallen.us/blog/install-pfsence-on-proxmox-update/</link>
+      <link>http://localhost:1313/blog/install-pfsence-on-proxmox-update/</link>
       <pubDate>Tue, 21 Dec 2021 14:19:23 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/install-pfsence-on-proxmox-update/</guid>
+      <guid>http://localhost:1313/blog/install-pfsence-on-proxmox-update/</guid>
       <description>Delaying pfSense installation on Proxmox to focus on updating Computer Hacking 101 and creating new YouTube content. Considering whether to install pfSense on bare metal or Proxmox.</description>
     </item>
     <item>
       <title>Upgrading Network: Adding 4-Port Ethernet Card to Proxmox</title>
-      <link>https://chrisallen.us/blog/install-pfsence-on-proxmox/</link>
+      <link>http://localhost:1313/blog/install-pfsence-on-proxmox/</link>
       <pubDate>Sat, 18 Dec 2021 14:19:23 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/install-pfsence-on-proxmox/</guid>
+      <guid>http://localhost:1313/blog/install-pfsence-on-proxmox/</guid>
       <description>Upgraded my network with a 4-port Ethernet card for Proxmox and pfSense, adding VLANs for IoT and server management, plus two Pi-holes for DNS.</description>
     </item>
   </channel>

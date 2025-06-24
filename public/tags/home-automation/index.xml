@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Home Automation on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/tags/home-automation/</link>
+    <link>http://localhost:1313/tags/home-automation/</link>
     <description>Recent content in Home Automation on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 19 Apr 2025 00:00:00 +0000</lastBuildDate>
-    <atom:link href="https://chrisallen.us/tags/home-automation/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/home-automation/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>A Lot Has Been Happening Lately</title>
-      <link>https://chrisallen.us/blog/newbusinessand3dprinter/</link>
+      <link>http://localhost:1313/blog/newbusinessand3dprinter/</link>
       <pubDate>Sat, 19 Apr 2025 00:00:00 +0000</pubDate>
-      <guid>https://chrisallen.us/blog/newbusinessand3dprinter/</guid>
+      <guid>http://localhost:1313/blog/newbusinessand3dprinter/</guid>
       <description>Updates on my journey launching TechNest Creations, my new 3D printing business, learning Fusion 360, and exploring home automation projects.</description>
     </item>
   </channel>

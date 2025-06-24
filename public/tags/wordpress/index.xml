@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Wordpress on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/tags/wordpress/</link>
+    <link>http://localhost:1313/tags/wordpress/</link>
     <description>Recent content in Wordpress on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 02 Jul 2022 08:00:00 -0500</lastBuildDate>
-    <atom:link href="https://chrisallen.us/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/wordpress/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Backup Challenges &amp; Projects: Website and YouTube Updates</title>
-      <link>https://chrisallen.us/blog/july-2-2022-update/</link>
+      <link>http://localhost:1313/blog/july-2-2022-update/</link>
       <pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/july-2-2022-update/</guid>
+      <guid>http://localhost:1313/blog/july-2-2022-update/</guid>
       <description>Facing backup issues and juggling contract work, I’m delayed on website and YouTube content. Upcoming projects include a Proxmox server upgrade and new eBay listings. Thanks for your patience!</description>
     </item>
     <item>
       <title>Managing Back Pain and YouTube Projects: Updates &amp; Plans</title>
-      <link>https://chrisallen.us/blog/july22022update/</link>
+      <link>http://localhost:1313/blog/july22022update/</link>
       <pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/july22022update/</guid>
+      <guid>http://localhost:1313/blog/july22022update/</guid>
       <description>This is just an update on what is going on the past couple of weeks.</description>
     </item>
     <item>
       <title>switch from wordpress to hugo</title>
-      <link>https://chrisallen.us/blog/new-website/</link>
+      <link>http://localhost:1313/blog/new-website/</link>
       <pubDate>Mon, 27 Jun 2022 14:22:23 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/new-website/</guid>
+      <guid>http://localhost:1313/blog/new-website/</guid>
       <description>Discover my recent transition from WordPress to Hugo and the ongoing conversion of Computer Hacking 101 to Hugo. Look out for my upcoming Syncthing tutorial video before I return to my 8 to 5 job on July 5. Explore the items I’m selling on eBay as I continue my office cleanup.</description>
     </item>
   </channel>

@@ -2,17 +2,17 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>My Life on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/tags/my-life/</link>
+    <link>http://localhost:1313/tags/my-life/</link>
     <description>Recent content in My Life on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 01 Dec 2022 00:00:00 -0500</lastBuildDate>
-    <atom:link href="https://chrisallen.us/tags/my-life/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/my-life/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Struggling Through Thanksgiving: Illness, Job Hunt, &amp; YouTube</title>
-      <link>https://chrisallen.us/blog/thinksgivingsickness/</link>
+      <link>http://localhost:1313/blog/thinksgivingsickness/</link>
       <pubDate>Thu, 01 Dec 2022 00:00:00 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/thinksgivingsickness/</guid>
+      <guid>http://localhost:1313/blog/thinksgivingsickness/</guid>
       <description>Thanksgiving week was tough due to illness, impacting my birthday and job search. Despite setbacks, I&amp;#39;m working on new YouTube content and hopeful for progress soon.</description>
     </item>
   </channel>

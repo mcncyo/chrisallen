@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Proxmox on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/categories/proxmox/</link>
+    <link>http://localhost:1313/categories/proxmox/</link>
     <description>Recent content in Proxmox on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 16 Jul 2022 00:00:00 -0500</lastBuildDate>
-    <atom:link href="https://chrisallen.us/categories/proxmox/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/categories/proxmox/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Optimized Proxmox Backup: Local Windows Share &amp; Backblaze</title>
-      <link>https://chrisallen.us/blog/currentplansonproxmox/</link>
+      <link>http://localhost:1313/blog/currentplansonproxmox/</link>
       <pubDate>Sat, 16 Jul 2022 00:00:00 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/currentplansonproxmox/</guid>
+      <guid>http://localhost:1313/blog/currentplansonproxmox/</guid>
       <description>Efficient Proxmox backup: 4x500GB SSDs, Windows 10 share for ISO/backups, auto-sync to Backblaze for reliable offsite protection.</description>
     </item>
     <item>
       <title>Upgrading Proxmox with 4x 500GB SSDs and ZFS</title>
-      <link>https://chrisallen.us/blog/just-bought-4drives/</link>
+      <link>http://localhost:1313/blog/just-bought-4drives/</link>
       <pubDate>Tue, 12 Jul 2022 13:25:23 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/just-bought-4drives/</guid>
+      <guid>http://localhost:1313/blog/just-bought-4drives/</guid>
       <description>Integrate four 500GB SSDs into your Proxmox server with a ZFS setup. Learn about the striped and mirrored configuration for nearly 1TB of storage and get ready for a video tutorial on migrating to a 1U rackmount case.</description>
     </item>
   </channel>

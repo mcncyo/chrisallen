@@ -2,38 +2,38 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>Blog on Chris allen&#39;s personal site</title>
-    <link>https://chrisallen.us/tags/blog/</link>
+    <link>http://localhost:1313/tags/blog/</link>
     <description>Recent content in Blog on Chris allen&#39;s personal site</description>
     <generator>Hugo -- 0.147.6</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 12 Mar 2024 15:25:52 -0500</lastBuildDate>
-    <atom:link href="https://chrisallen.us/tags/blog/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/tags/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>House Hunting, Health Struggles, and New Church Routine</title>
-      <link>https://chrisallen.us/blog/househunting/</link>
+      <link>http://localhost:1313/blog/househunting/</link>
       <pubDate>Tue, 12 Mar 2024 15:25:52 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/househunting/</guid>
+      <guid>http://localhost:1313/blog/househunting/</guid>
       <description>Explore my recent journey through house hunting, preparing my home for sale, managing health issues, and balancing a demanding work schedule, all while adapting to a new church routine.</description>
     </item>
     <item>
       <title>Recent Challenges: Contract Work and Proxmox Server Issues</title>
-      <link>https://chrisallen.us/blog/aug4update/</link>
+      <link>http://localhost:1313/blog/aug4update/</link>
       <pubDate>Thu, 04 Aug 2022 11:00:00 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/aug4update/</guid>
+      <guid>http://localhost:1313/blog/aug4update/</guid>
       <description>Navigating project cancellations and server setup issues: the challenges of contract work and Proxmox server installations.</description>
     </item>
     <item>
       <title>Exciting Upgrades: Syncthing Tutorial, Hugo Migration, New Gear</title>
-      <link>https://chrisallen.us/blog/beenverybusy2/</link>
+      <link>http://localhost:1313/blog/beenverybusy2/</link>
       <pubDate>Wed, 15 Jun 2022 11:25:52 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/beenverybusy2/</guid>
+      <guid>http://localhost:1313/blog/beenverybusy2/</guid>
       <description>Busy with work and life but planning new projects: Syncthing video, Hugo site migration, server upgrades, and networking enhancements.</description>
     </item>
     <item>
       <title>Welcome to chris allen&#39;s site</title>
-      <link>https://chrisallen.us/blog/my-first-post/</link>
+      <link>http://localhost:1313/blog/my-first-post/</link>
       <pubDate>Fri, 17 Dec 2021 08:20:23 -0500</pubDate>
-      <guid>https://chrisallen.us/blog/my-first-post/</guid>
+      <guid>http://localhost:1313/blog/my-first-post/</guid>
       <description>This is my first post on my website.  Talk about what I am currently working on and things to come</description>
     </item>
   </channel>
