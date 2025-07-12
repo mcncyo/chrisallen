@@ -17,7 +17,7 @@ steps:
       - hugo --minify
 
   - name: deploy via sync
-    image: appleboy/drone-sync
+    image: appleboy/drone-scp
     settings:
       host: server1.chrisallen.us
       username: mcncyo
