@@ -1,0 +1,26 @@
+kind: pipeline
+type: docker
+name: build-and-deploy
+
+steps:
+  - name: install npm dependencies
+    image: node:18-alpine
+    commands:
+      - npm install
+
+  - name: hugo build
+    image: klakegg/hugo:ext-alpine
+    commands:
+      - hugo --minify
+
+  - name: deploy via rsync
+    image: appleboy/drone-rsync
+    settings:
+      host: your.vps.ip.or.domain
+      username: youruser
+      port: 22
+      key:
+      from_secret: webserverkey
+      source: public/
+      target: /home/mcncyo/websites/chrisallen/public/
+
