@@ -25,6 +25,6 @@ steps:
       key:
         from_secret: webserverkey
       source: public/
-      target: /home/mcncyo/websites/chrisallen/public/
+      target: /home/mcncyo/websites/chrisallen/
 
 
