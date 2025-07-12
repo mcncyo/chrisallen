@@ -16,7 +16,7 @@ steps:
     commands:
       - hugo --minify
 
-  - name: deploy via sync
+  - name: deploy via rsync
     image: appleboy/drone-scp
     settings:
       host: server1.chrisallen.us
@@ -26,5 +26,11 @@ steps:
         from_secret: webserverkey
       source: public/
       target: /home/mcncyo/websites/chrisallen/
+      rsync: true
+      rm: true
+      strip_components: 1
+      rsync_args:
+        - --delete
+
 
 
