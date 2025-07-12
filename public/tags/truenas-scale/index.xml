@@ -1,19 +1,2 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Truenas Scale on Chris allen&#39;s personal site</title>
-    <link>http://localhost:1313/tags/truenas-scale/</link>
-    <description>Recent content in Truenas Scale on Chris allen&#39;s personal site</description>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 13:25:23 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/truenas-scale/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Housing Options: Build vs. Buy &amp; Other Life Updates</title>
-      <link>http://localhost:1313/blog/july-24-update/</link>
-      <pubDate>Mon, 22 Jul 2024 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july-24-update/</guid>
-      <description>House hunting or building. Work&amp;#39;s busy with new projects. Switched from Proxmox to TrueNAS; planning server upgrades soon.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Truenas Scale on Chris Allen's personal site</title><link>https://chrisallen.us/tags/truenas-scale/</link><description>Recent content in Truenas Scale on Chris Allen's personal site</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 22 Jul 2024 13:25:23 -0500</lastBuildDate><atom:link href="https://chrisallen.us/tags/truenas-scale/index.xml" rel="self" type="application/rss+xml"/><item><title>Housing Options: Build vs. Buy &amp; Other Life Updates</title><link>https://chrisallen.us/posts/july-24-update/</link><pubDate>Mon, 22 Jul 2024 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/july-24-update/</guid><description>&lt;p>I’m still in the process of finding a new house within my hometown. We haven’t had much luck with our offers so far, so we’re considering building a house instead. We’ve talked to a company called UBuild It, but we’re still undecided about whether to go that route or just buy a house outright. We’re weighing our options and trying to figure out what’s best for us.&lt;/p>
+&lt;p>Work has been a bit of a mixed bag lately. Some days are incredibly busy, while others are quite slow. For the past couple of weeks, I’ve been focused on password resets for a new project. There are several other planned projects on the horizon, so it looks like I’ll be in for a busy end of the year.&lt;/p></description></item></channel></rss>

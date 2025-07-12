@@ -1,117 +1,43 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Youtube on Chris allen&#39;s personal site</title>
-    <link>http://localhost:1313/tags/youtube/</link>
-    <description>Recent content in Youtube on Chris allen&#39;s personal site</description>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 20 Jan 2024 13:25:23 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/youtube/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Life, Work, Tech: Health Journey, Home Search, IT Setup</title>
-      <link>http://localhost:1313/blog/jan2024/</link>
-      <pubDate>Sat, 20 Jan 2024 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/jan2024/</guid>
-      <description>Join me as I navigate a weight loss journey, search for a new home, and balance a demanding IT job. Explore my tech setup with Proxmox, Pop!_OS, and robust backup solutions for a resilient digital environment.</description>
-    </item>
-    <item>
-      <title>Using Syncthing: Upcoming YouTube Videos &amp; Website Updates</title>
-      <link>http://localhost:1313/blog/feb82003update/</link>
-      <pubDate>Wed, 08 Feb 2023 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/feb82003update/</guid>
-      <description>Learn how to use Syncthing in my upcoming YouTube video. Stay tuned for updates on my site and challenges faced switching to a 1U server case.</description>
-    </item>
-    <item>
-      <title>Busy Season: Health Updates, Network Upgrades, New Content</title>
-      <link>http://localhost:1313/blog/jan112023update/</link>
-      <pubDate>Wed, 11 Jan 2023 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/jan112023update/</guid>
-      <description>From family health updates to major tech upgrades, I’ve been busy managing it all. Discover how I&amp;#39;ve revamped my home network, launched a new subdomain, and am gearing up for exciting new content!</description>
-    </item>
-    <item>
-      <title>Struggling Through Thanksgiving: Illness, Job Hunt, &amp; YouTube</title>
-      <link>http://localhost:1313/blog/thinksgivingsickness/</link>
-      <pubDate>Thu, 01 Dec 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/thinksgivingsickness/</guid>
-      <description>Thanksgiving week was tough due to illness, impacting my birthday and job search. Despite setbacks, I&amp;#39;m working on new YouTube content and hopeful for progress soon.</description>
-    </item>
-    <item>
-      <title>Job Hunt &amp; Gig Work Update: High Pay, DoorDash, and More</title>
-      <link>http://localhost:1313/blog/oct252022update/</link>
-      <pubDate>Tue, 25 Oct 2022 01:00:02 -0500</pubDate>
-      <guid>http://localhost:1313/blog/oct252022update/</guid>
-      <description>Currently job hunting for high-paying positions while doing gig work with DoorDash, Uber Eats, and GrubHub in West Wichita. Also improving my website and creating YouTube content. Stay tuned for updates!</description>
-    </item>
-    <item>
-      <title>KINGJOY 75 Tripod Review: Affordable Versatility for Devices</title>
-      <link>http://localhost:1313/blog/buying-a-new-tripod/</link>
-      <pubDate>Sun, 11 Sep 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/buying-a-new-tripod/</guid>
-      <description>KINGJOY 75 inch Tripod from Amazon, $33. Versatile for phone &amp;amp; camera. Great for photography &amp;amp; videos. Review coming soon!</description>
-    </item>
-    <item>
-      <title>New Microphone Review: Better Sound Quality &amp; Setup</title>
-      <link>http://localhost:1313/blog/newmic/</link>
-      <pubDate>Sun, 28 Aug 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/newmic/</guid>
-      <description>Check out my new microphone setup and see how it performs compared to my old mic. Test videos coming soon!</description>
-    </item>
-    <item>
-      <title>Proxmox Server Upgrade: Solving Case and Heat Sink Issues</title>
-      <link>http://localhost:1313/blog/july282022update/</link>
-      <pubDate>Thu, 28 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july282022update/</guid>
-      <description>Encountering issues while upgrading your Proxmox server to a 1U rack mount case? Discover the challenges with motherboard stand-offs and heat sink compatibility, and learn how to address them effectively.</description>
-    </item>
-    <item>
-      <title>Backup Challenges &amp; Projects: Website and YouTube Updates</title>
-      <link>http://localhost:1313/blog/july-2-2022-update/</link>
-      <pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july-2-2022-update/</guid>
-      <description>Facing backup issues and juggling contract work, I’m delayed on website and YouTube content. Upcoming projects include a Proxmox server upgrade and new eBay listings. Thanks for your patience!</description>
-    </item>
-    <item>
-      <title>Managing Back Pain and YouTube Projects: Updates &amp; Plans</title>
-      <link>http://localhost:1313/blog/july22022update/</link>
-      <pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july22022update/</guid>
-      <description>This is just an update on what is going on the past couple of weeks.</description>
-    </item>
-    <item>
-      <title>switch from wordpress to hugo</title>
-      <link>http://localhost:1313/blog/new-website/</link>
-      <pubDate>Mon, 27 Jun 2022 14:22:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/new-website/</guid>
-      <description>Discover my recent transition from WordPress to Hugo and the ongoing conversion of Computer Hacking 101 to Hugo. Look out for my upcoming Syncthing tutorial video before I return to my 8 to 5 job on July 5. Explore the items I’m selling on eBay as I continue my office cleanup.</description>
-    </item>
-    <item>
-      <title>Unlock Syncthing’s Power: Watch My Latest Video &amp; More Coming!</title>
-      <link>http://localhost:1313/blog/3rd-youtube-video-posted/</link>
-      <pubDate>Tue, 22 Feb 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/3rd-youtube-video-posted/</guid>
-      <description>Check out my latest Syncthing video! Learn setup basics, one-way transfers, and advanced features. More tips coming soon!</description>
-    </item>
-    <item>
-      <title>How to Install Syncthing on Linux – Complete Guide</title>
-      <link>http://localhost:1313/blog/my-2nd-video-is-posted-toyoutube/</link>
-      <pubDate>Thu, 03 Feb 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/my-2nd-video-is-posted-toyoutube/</guid>
-      <description>Just posted my second YouTube video on installing Syncthing on Linux. Upcoming videos will cover Syncthing installation on Windows, Android, and advanced setup options. I’ll also explore how to install the Syncthing relay service. Subscribe for more Syncthing tutorials and updates!</description>
-    </item>
-    <item>
-      <title>Dropbox vs. Syncthing: Which File Sync Solution is Best?</title>
-      <link>http://localhost:1313/blog/i-just-posted-my-first-youtube-video/</link>
-      <pubDate>Sun, 23 Jan 2022 11:28:29 -0500</pubDate>
-      <guid>http://localhost:1313/blog/i-just-posted-my-first-youtube-video/</guid>
-      <description>Compare Dropbox and Syncthing in this video! I cover key features and differences to help you choose the best file sync solution for your needs. Stay tuned for my Syncthing Linux guide!</description>
-    </item>
-    <item>
-      <title>Almost done with my first YouTube video!</title>
-      <link>http://localhost:1313/blog/almost-complete-on-my-first-youtube-video/</link>
-      <pubDate>Tue, 04 Jan 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/almost-complete-on-my-first-youtube-video/</guid>
-      <description>I&amp;#39;m close to finishing my Dropbox vs. Syncthing video and working on a Linux installation guide. Balancing this with a 38-hour workweek, aiming to release soon.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Youtube on Chris Allen's personal site</title><link>https://chrisallen.us/tags/youtube/</link><description>Recent content in Youtube on Chris Allen's personal site</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 20 Jan 2024 13:25:23 -0500</lastBuildDate><atom:link href="https://chrisallen.us/tags/youtube/index.xml" rel="self" type="application/rss+xml"/><item><title>Life, Work, Tech: Health Journey, Home Search, IT Setup</title><link>https://chrisallen.us/posts/jan2024/</link><pubDate>Sat, 20 Jan 2024 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/jan2024/</guid><description>&lt;h2 id="life--working">Life &amp;amp; Working&lt;/h2>
+&lt;p>I am currently motivated to embark on a weight loss journey due to some health concerns I am facing. My wife and I are exploring the possibility of moving soon, with the hope of finding the perfect home. I am currently engaged in a 40-hour IT support position in my local area. While the job can be stressful at times, I find satisfaction in the work, and I am fortunate to have a positive relationship with most of my colleagues. However, I do aspire to receive a more competitive salary for my efforts.&lt;/p></description></item><item><title>Using Syncthing: Upcoming YouTube Videos &amp; Website Updates</title><link>https://chrisallen.us/posts/feb82003update/</link><pubDate>Wed, 08 Feb 2023 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/feb82003update/</guid><description>&lt;h4 id="youtube-videos">YouTube Videos&lt;/h4>
+&lt;p>I recently filmed a comprehensive video on &lt;strong>how to use Syncthing&lt;/strong>, and I’m currently in the editing phase. While I&amp;rsquo;ve encountered a few challenges in making it look polished, I aim to release it within the next couple of weeks. Additionally, I&amp;rsquo;m working on another video detailing the issues I faced while switching from a tower case to a 1U server case. Stay tuned for these informative updates!&lt;/p></description></item><item><title>Busy Season: Health Updates, Network Upgrades, New Content</title><link>https://chrisallen.us/posts/jan112023update/</link><pubDate>Wed, 11 Jan 2023 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/jan112023update/</guid><description>&lt;h2 id="how-ive-been-keeping-busy-from-family-health-to-tech-upgrades-and-content-creation">How I’ve Been Keeping Busy: From Family Health to Tech Upgrades and Content Creation&lt;/h2>
+&lt;p>Wow, what a whirlwind the past few weeks have been! With the holiday season in full swing and the added challenge of my grandma&amp;rsquo;s hospital visits, it&amp;rsquo;s been quite a hectic time. The good news is that she&amp;rsquo;s now back home and relaxing, which brings a huge relief to our family.&lt;/p>
+&lt;p>While juggling these personal challenges, I&amp;rsquo;ve also been deeply immersed in some exciting projects. One of the biggest updates is the work I&amp;rsquo;ve been doing on my home network. I&amp;rsquo;ve been upgrading and optimizing it to enhance my online activities and content creation process.&lt;/p></description></item><item><title>Struggling Through Thanksgiving: Illness, Job Hunt, &amp; YouTube</title><link>https://chrisallen.us/posts/thinksgivingsickness/</link><pubDate>Thu, 01 Dec 2022 00:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/thinksgivingsickness/</guid><description>&lt;h2 id="thanksgiving-week-recap-a-tough-time-and-looking-forward">Thanksgiving Week Recap: A Tough Time and Looking Forward&lt;/h2>
+&lt;h3 id="a-challenging-thanksgiving-week">A Challenging Thanksgiving Week&lt;/h3>
+&lt;p>Thanksgiving week has been quite difficult for me this year. We celebrated my birthday at my mother-in-law&amp;rsquo;s house on Sunday. Unfortunately, I wasn&amp;rsquo;t feeling my best then, and things took a turn for the worse on Monday. I ended up staying in bed almost all day from Monday through Thursday due to illness. To make matters worse, Wednesday was my birthday, which turned out to be quite a disappointing day.&lt;/p></description></item><item><title>Job Hunt &amp; Gig Work Update: High Pay, DoorDash, and More</title><link>https://chrisallen.us/posts/oct252022update/</link><pubDate>Tue, 25 Oct 2022 01:00:02 -0500</pubDate><guid>https://chrisallen.us/posts/oct252022update/</guid><description>&lt;h2 id="seeking-a-good-paying-job-and-gig-work-update">Seeking a Good-Paying Job and Gig Work Update&lt;/h2>
+&lt;p>I am actively &lt;strong>searching for a high-paying job&lt;/strong> and have recently attended several interviews. Unfortunately, most of the positions offered were either not a good fit or offered low pay.&lt;/p>
+&lt;p>In the meantime, I am engaging in gig work, including &lt;strong>DoorDash&lt;/strong>, &lt;strong>Uber Eats&lt;/strong>, and &lt;strong>GrubHub&lt;/strong>, primarily in &lt;strong>West Wichita&lt;/strong>. This helps me stay productive while continuing my job search.&lt;/p>
+&lt;h3 id="current-projects">Current Projects&lt;/h3>
+&lt;p>In addition to my job search, I am &lt;strong>working on improving my website&lt;/strong> and contributing to &lt;a href="https://computerhacking101.com">Computer Hacking 101&lt;/a>. I am also busy creating new content for my &lt;strong>YouTube channel&lt;/strong>.&lt;/p></description></item><item><title>KINGJOY 75 Tripod Review: Affordable Versatility for Devices</title><link>https://chrisallen.us/posts/buying-a-new-tripod/</link><pubDate>Sun, 11 Sep 2022 00:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/buying-a-new-tripod/</guid><description>&lt;p>Exciting New Tripod Purchase: KINGJOY 75&amp;quot; Camera Tripod Review&lt;/p>
+&lt;p>I’m thrilled to share that I’ll be getting a new tripod soon from Amazon! The KINGJOY 75&amp;quot; Camera Tripod, priced at just around $33.00, has an adapter that allows for both camera and phone use, making it a versatile choice for various needs.&lt;/p>
+&lt;p>This tripod is a fantastic value, especially for those looking to elevate their photography or videography game without breaking the bank. I’ll be using it primarily to hold my phone at the moment. In the future, I plan to invest in a camera to enhance my video content.&lt;/p></description></item><item><title>New Microphone Review: Better Sound Quality &amp; Setup</title><link>https://chrisallen.us/posts/newmic/</link><pubDate>Sun, 28 Aug 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/newmic/</guid><description>&lt;h2 id="new-microphone-setup">New Microphone Setup&lt;/h2>
+&lt;p>Somehow, my old mic stopped working, so I went to Amazon and bought a new mic. Here’s how I set it up:&lt;/p>
+&lt;p>&lt;img src="https://chrisallen.us/images/newmic.jpg" alt="New Microphone Setup">&lt;/p>
+&lt;p>If you’d like to get the same mic, you can find it &lt;a href="https://amzn.to/3curOvK">here on Amazon&lt;/a>.&lt;/p>
+&lt;p>So far, the new mic seems to be performing better than my old one. I’ve conducted some tests, and the results are promising. I’ll be posting a few test videos soon to showcase its performance, so stay tuned!&lt;/p></description></item><item><title>Proxmox Server Upgrade: Solving Case and Heat Sink Issues</title><link>https://chrisallen.us/posts/july282022update/</link><pubDate>Thu, 28 Jul 2022 08:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/july282022update/</guid><description>&lt;h2 id="proxmox-server-upgrade-challenges-and-solutions">Proxmox Server Upgrade: Challenges and Solutions&lt;/h2>
+&lt;p>I recently embarked on upgrading my Proxmox server by transferring it to a 1U rack mount case, but I&amp;rsquo;ve encountered a few issues along the way.&lt;/p>
+&lt;h3 id="1-motherboard-stand-offs-issue">1. Motherboard Stand-Offs Issue&lt;/h3>
+&lt;p>One challenge is related to the motherboard stand-offs. I&amp;rsquo;ll need to reposition them to fit the new case, but I&amp;rsquo;ve run into a small hiccup: I misplaced the specific wrench required for this task. I&amp;rsquo;m in the process of obtaining a replacement wrench set to resolve this issue.&lt;/p></description></item><item><title>Backup Challenges &amp; Projects: Website and YouTube Updates</title><link>https://chrisallen.us/posts/july-2-2022-update/</link><pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/july-2-2022-update/</guid><description>&lt;h2 id="backup-challenges-and-upcoming-projects">Backup Challenges and Upcoming Projects&lt;/h2>
+&lt;p>Lately, I&amp;rsquo;ve been dealing with some significant backup issues, which have unfortunately delayed my plans for the website and the next video in the Syncthing series for the Computer Hacking 101 channel. The backup problems have made it challenging to stay on top of my content creation schedule.&lt;/p>
+&lt;p>Starting Tuesday, I&amp;rsquo;ll be back at work with my 8-to-5 contract job. This will limit my time to work on the website and YouTube channel, as my primary focus will be on this contract work. I need to prioritize this to provide for my family and to fund essential purchases for my YouTube projects.&lt;/p></description></item><item><title>Managing Back Pain and YouTube Projects: Updates &amp; Plans</title><link>https://chrisallen.us/posts/july22022update/</link><pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/july22022update/</guid><description>&lt;h2 id="struggling-with-back-pain-and-balancing-work-and-youtube-projects">Struggling with Back Pain and Balancing Work and YouTube Projects&lt;/h2>
+&lt;p>Lately, I’ve been dealing with significant back pain, which has unfortunately slowed down my progress on my website and the creation of a new video on using Syncthing for Computer Hacking 101 websites. As I return to my 8 to 5 contract work starting Tuesday, my time for these projects will be limited. This contract work is essential for supporting my family and funding my YouTube channel.&lt;/p></description></item><item><title>switch from wordpress to hugo</title><link>https://chrisallen.us/posts/new-website/</link><pubDate>Mon, 27 Jun 2022 14:22:23 -0500</pubDate><guid>https://chrisallen.us/posts/new-website/</guid><description>&lt;h2 id="website-conversion-and-updates">Website Conversion and Updates&lt;/h2>
+&lt;p>I have recently converted my WordPress site to Hugo. There are still a few more changes and additions I plan to make. Additionally, I have started working on converting &lt;a href="https://computerhacking101.com">Computer Hacking 101&lt;/a> to Hugo as well.&lt;/p>
+&lt;h2 id="upcoming-video-release">Upcoming Video Release&lt;/h2>
+&lt;p>I am planning to release a video on how to use Syncthing this week before returning to my 8 to 5 job contract work, which begins on July 5. Stay tuned for this informative video!&lt;/p></description></item><item><title>Unlock Syncthing’s Power: Watch My Latest Video &amp; More Coming!</title><link>https://chrisallen.us/posts/3rd-youtube-video-posted/</link><pubDate>Tue, 22 Feb 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/3rd-youtube-video-posted/</guid><description>&lt;p>Hello, tech enthusiasts and Syncthing aficionados!&lt;/p>
+&lt;p>I’m thrilled to announce that my latest video on Syncthing is now live on YouTube! In this installment, I dive deep into the capabilities of Syncthing and share some valuable tips and tricks that can enhance your file synchronization experience. If you’re looking to streamline your data management and learn more about this powerful tool, you won’t want to miss it. Check out the video here:&lt;/p></description></item><item><title>How to Install Syncthing on Linux – Complete Guide</title><link>https://chrisallen.us/posts/my-2nd-video-is-posted-toyoutube/</link><pubDate>Thu, 03 Feb 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/my-2nd-video-is-posted-toyoutube/</guid><description>&lt;h2 id="new-syncthing-video-on-youtube">New Syncthing Video on YouTube!&lt;/h2>
+&lt;p>Yesterday, I posted my &lt;strong>2nd video about Syncthing&lt;/strong> on YouTube. Check it out here: &lt;a href="https://www.youtube.com/watch?v=_PXNxpdAvJM">Installing Syncthing on Linux&lt;/a>.&lt;/p>
+&lt;p>In this video, I walk you through the process of installing Syncthing on a Linux system. But that&amp;rsquo;s not all—I have several more videos planned on Syncthing, including:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Installing Syncthing on Windows&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Setting up Syncthing on Android&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Advanced Syncthing Configuration&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>I might even create a tutorial on how to &lt;strong>install the Syncthing relay service&lt;/strong>. Stay tuned for more updates and tutorials on Syncthing by subscribing to my channel!&lt;/p></description></item><item><title>Dropbox vs. Syncthing: Which File Sync Solution is Best?</title><link>https://chrisallen.us/posts/i-just-posted-my-first-youtube-video/</link><pubDate>Sun, 23 Jan 2022 11:28:29 -0500</pubDate><guid>https://chrisallen.us/posts/i-just-posted-my-first-youtube-video/</guid><description>&lt;h2 id="comparing-dropbox-and-syncthing-my-first-video">Comparing Dropbox and Syncthing: My First Video&lt;/h2>
+&lt;p>In my latest video, I dive into a comprehensive comparison between Dropbox and Syncthing. This comparison explores the features, benefits, and potential drawbacks of each file synchronization solution, helping you determine which one might be the best fit for your needs.&lt;/p>
+&lt;h3 id="watch-the-video">Watch the Video&lt;/h3>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Yjxa02dttks?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h3 id="whats-next">What’s Next?&lt;/h3>
+&lt;p>I&amp;rsquo;m currently working on my next video, where I&amp;rsquo;ll guide you through the process of installing Syncthing on Linux. This upcoming video will provide step-by-step instructions to help you set up Syncthing on your Linux system and get started with secure file synchronization.&lt;/p></description></item><item><title>Almost done with my first YouTube video!</title><link>https://chrisallen.us/posts/almost-complete-on-my-first-youtube-video/</link><pubDate>Tue, 04 Jan 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/almost-complete-on-my-first-youtube-video/</guid><description>&lt;p>I am nearing completion of my first major YouTube video, &amp;ldquo;Dropbox vs. Syncthing.&amp;rdquo; Most of the editing is done, and I still need to create a segment of the PowerPoint presentation that will accompany my narration. Additionally, I am working on the script for my next video, which will demonstrate how to install Syncthing on Linux. The corresponding webpage is almost finished, though I still have a lot to do for the &amp;ldquo;Dropbox vs. Syncthing&amp;rdquo; video.&lt;/p></description></item></channel></rss>

@@ -1,82 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Syncthing on Chris allen&#39;s personal site</title>
-    <link>http://localhost:1313/tags/syncthing/</link>
-    <description>Recent content in Syncthing on Chris allen&#39;s personal site</description>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en-us</language>
-    <lastBuildDate>Thu, 04 Aug 2022 11:00:00 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/syncthing/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Recent Challenges: Contract Work and Proxmox Server Issues</title>
-      <link>http://localhost:1313/blog/aug4update/</link>
-      <pubDate>Thu, 04 Aug 2022 11:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/aug4update/</guid>
-      <description>Navigating project cancellations and server setup issues: the challenges of contract work and Proxmox server installations.</description>
-    </item>
-    <item>
-      <title>Backup Challenges &amp; Projects: Website and YouTube Updates</title>
-      <link>http://localhost:1313/blog/july-2-2022-update/</link>
-      <pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july-2-2022-update/</guid>
-      <description>Facing backup issues and juggling contract work, I’m delayed on website and YouTube content. Upcoming projects include a Proxmox server upgrade and new eBay listings. Thanks for your patience!</description>
-    </item>
-    <item>
-      <title>Managing Back Pain and YouTube Projects: Updates &amp; Plans</title>
-      <link>http://localhost:1313/blog/july22022update/</link>
-      <pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july22022update/</guid>
-      <description>This is just an update on what is going on the past couple of weeks.</description>
-    </item>
-    <item>
-      <title>switch from wordpress to hugo</title>
-      <link>http://localhost:1313/blog/new-website/</link>
-      <pubDate>Mon, 27 Jun 2022 14:22:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/new-website/</guid>
-      <description>Discover my recent transition from WordPress to Hugo and the ongoing conversion of Computer Hacking 101 to Hugo. Look out for my upcoming Syncthing tutorial video before I return to my 8 to 5 job on July 5. Explore the items I’m selling on eBay as I continue my office cleanup.</description>
-    </item>
-    <item>
-      <title>Exciting Upgrades: Syncthing Tutorial, Hugo Migration, New Gear</title>
-      <link>http://localhost:1313/blog/beenverybusy2/</link>
-      <pubDate>Wed, 15 Jun 2022 11:25:52 -0500</pubDate>
-      <guid>http://localhost:1313/blog/beenverybusy2/</guid>
-      <description>Busy with work and life but planning new projects: Syncthing video, Hugo site migration, server upgrades, and networking enhancements.</description>
-    </item>
-    <item>
-      <title>Unlock Syncthing’s Power: Watch My Latest Video &amp; More Coming!</title>
-      <link>http://localhost:1313/blog/3rd-youtube-video-posted/</link>
-      <pubDate>Tue, 22 Feb 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/3rd-youtube-video-posted/</guid>
-      <description>Check out my latest Syncthing video! Learn setup basics, one-way transfers, and advanced features. More tips coming soon!</description>
-    </item>
-    <item>
-      <title>How to Install Syncthing on Linux – Complete Guide</title>
-      <link>http://localhost:1313/blog/my-2nd-video-is-posted-toyoutube/</link>
-      <pubDate>Thu, 03 Feb 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/my-2nd-video-is-posted-toyoutube/</guid>
-      <description>Just posted my second YouTube video on installing Syncthing on Linux. Upcoming videos will cover Syncthing installation on Windows, Android, and advanced setup options. I’ll also explore how to install the Syncthing relay service. Subscribe for more Syncthing tutorials and updates!</description>
-    </item>
-    <item>
-      <title>Dropbox vs. Syncthing: Which File Sync Solution is Best?</title>
-      <link>http://localhost:1313/blog/i-just-posted-my-first-youtube-video/</link>
-      <pubDate>Sun, 23 Jan 2022 11:28:29 -0500</pubDate>
-      <guid>http://localhost:1313/blog/i-just-posted-my-first-youtube-video/</guid>
-      <description>Compare Dropbox and Syncthing in this video! I cover key features and differences to help you choose the best file sync solution for your needs. Stay tuned for my Syncthing Linux guide!</description>
-    </item>
-    <item>
-      <title>Almost done with my first YouTube video!</title>
-      <link>http://localhost:1313/blog/almost-complete-on-my-first-youtube-video/</link>
-      <pubDate>Tue, 04 Jan 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/almost-complete-on-my-first-youtube-video/</guid>
-      <description>I&amp;#39;m close to finishing my Dropbox vs. Syncthing video and working on a Linux installation guide. Balancing this with a 38-hour workweek, aiming to release soon.</description>
-    </item>
-    <item>
-      <title>Welcome to chris allen&#39;s site</title>
-      <link>http://localhost:1313/blog/my-first-post/</link>
-      <pubDate>Fri, 17 Dec 2021 08:20:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/my-first-post/</guid>
-      <description>This is my first post on my website.  Talk about what I am currently working on and things to come</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Syncthing on Chris Allen's personal site</title><link>https://chrisallen.us/tags/syncthing/</link><description>Recent content in Syncthing on Chris Allen's personal site</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sat, 02 Jul 2022 08:00:00 -0500</lastBuildDate><atom:link href="https://chrisallen.us/tags/syncthing/index.xml" rel="self" type="application/rss+xml"/><item><title>Backup Challenges &amp; Projects: Website and YouTube Updates</title><link>https://chrisallen.us/posts/july-2-2022-update/</link><pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/july-2-2022-update/</guid><description>&lt;h2 id="backup-challenges-and-upcoming-projects">Backup Challenges and Upcoming Projects&lt;/h2>
+&lt;p>Lately, I&amp;rsquo;ve been dealing with some significant backup issues, which have unfortunately delayed my plans for the website and the next video in the Syncthing series for the Computer Hacking 101 channel. The backup problems have made it challenging to stay on top of my content creation schedule.&lt;/p>
+&lt;p>Starting Tuesday, I&amp;rsquo;ll be back at work with my 8-to-5 contract job. This will limit my time to work on the website and YouTube channel, as my primary focus will be on this contract work. I need to prioritize this to provide for my family and to fund essential purchases for my YouTube projects.&lt;/p></description></item><item><title>Managing Back Pain and YouTube Projects: Updates &amp; Plans</title><link>https://chrisallen.us/posts/july22022update/</link><pubDate>Sat, 02 Jul 2022 08:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/july22022update/</guid><description>&lt;h2 id="struggling-with-back-pain-and-balancing-work-and-youtube-projects">Struggling with Back Pain and Balancing Work and YouTube Projects&lt;/h2>
+&lt;p>Lately, I’ve been dealing with significant back pain, which has unfortunately slowed down my progress on my website and the creation of a new video on using Syncthing for Computer Hacking 101 websites. As I return to my 8 to 5 contract work starting Tuesday, my time for these projects will be limited. This contract work is essential for supporting my family and funding my YouTube channel.&lt;/p></description></item><item><title>switch from wordpress to hugo</title><link>https://chrisallen.us/posts/new-website/</link><pubDate>Mon, 27 Jun 2022 14:22:23 -0500</pubDate><guid>https://chrisallen.us/posts/new-website/</guid><description>&lt;h2 id="website-conversion-and-updates">Website Conversion and Updates&lt;/h2>
+&lt;p>I have recently converted my WordPress site to Hugo. There are still a few more changes and additions I plan to make. Additionally, I have started working on converting &lt;a href="https://computerhacking101.com">Computer Hacking 101&lt;/a> to Hugo as well.&lt;/p>
+&lt;h2 id="upcoming-video-release">Upcoming Video Release&lt;/h2>
+&lt;p>I am planning to release a video on how to use Syncthing this week before returning to my 8 to 5 job contract work, which begins on July 5. Stay tuned for this informative video!&lt;/p></description></item><item><title>Exciting Upgrades: Syncthing Tutorial, Hugo Migration, New Gear</title><link>https://chrisallen.us/posts/beenverybusy2/</link><pubDate>Wed, 15 Jun 2022 11:25:52 -0500</pubDate><guid>https://chrisallen.us/posts/beenverybusy2/</guid><description>&lt;h1 id="exciting-updates-new-projects-and-recent-purchases">Exciting Updates: New Projects and Recent Purchases&lt;/h1>
+&lt;p>I&amp;rsquo;ve been incredibly busy with work and personal commitments recently, which has limited my time for YouTube and managing my websites. However, I’m thrilled to share that I&amp;rsquo;ve managed to release a few new videos on my &lt;a href="https://www.youtube.com/@computerhacking101">computer hacking 101&lt;/a>. Looking ahead, I’ll be dedicating the next two weeks to focusing on some exciting projects.&lt;/p>
+&lt;h2 id="upcoming-projects-and-video-content">Upcoming Projects and Video Content&lt;/h2>
+&lt;h3 id="comprehensive-syncthing-tutorial">Comprehensive Syncthing Tutorial&lt;/h3>
+&lt;p>One of my major upcoming projects is a &lt;strong>comprehensive Syncthing tutorial&lt;/strong>. This video will cover everything you need to know about &lt;a href="https://syncthing.net">Syncthing&lt;/a>, including setup and practical uses. Stay tuned for in-depth insights into this powerful synchronization tool.&lt;/p></description></item><item><title>Unlock Syncthing’s Power: Watch My Latest Video &amp; More Coming!</title><link>https://chrisallen.us/posts/3rd-youtube-video-posted/</link><pubDate>Tue, 22 Feb 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/3rd-youtube-video-posted/</guid><description>&lt;p>Hello, tech enthusiasts and Syncthing aficionados!&lt;/p>
+&lt;p>I’m thrilled to announce that my latest video on Syncthing is now live on YouTube! In this installment, I dive deep into the capabilities of Syncthing and share some valuable tips and tricks that can enhance your file synchronization experience. If you’re looking to streamline your data management and learn more about this powerful tool, you won’t want to miss it. Check out the video here:&lt;/p></description></item><item><title>How to Install Syncthing on Linux – Complete Guide</title><link>https://chrisallen.us/posts/my-2nd-video-is-posted-toyoutube/</link><pubDate>Thu, 03 Feb 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/my-2nd-video-is-posted-toyoutube/</guid><description>&lt;h2 id="new-syncthing-video-on-youtube">New Syncthing Video on YouTube!&lt;/h2>
+&lt;p>Yesterday, I posted my &lt;strong>2nd video about Syncthing&lt;/strong> on YouTube. Check it out here: &lt;a href="https://www.youtube.com/watch?v=_PXNxpdAvJM">Installing Syncthing on Linux&lt;/a>.&lt;/p>
+&lt;p>In this video, I walk you through the process of installing Syncthing on a Linux system. But that&amp;rsquo;s not all—I have several more videos planned on Syncthing, including:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Installing Syncthing on Windows&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Setting up Syncthing on Android&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>Advanced Syncthing Configuration&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>I might even create a tutorial on how to &lt;strong>install the Syncthing relay service&lt;/strong>. Stay tuned for more updates and tutorials on Syncthing by subscribing to my channel!&lt;/p></description></item><item><title>Dropbox vs. Syncthing: Which File Sync Solution is Best?</title><link>https://chrisallen.us/posts/i-just-posted-my-first-youtube-video/</link><pubDate>Sun, 23 Jan 2022 11:28:29 -0500</pubDate><guid>https://chrisallen.us/posts/i-just-posted-my-first-youtube-video/</guid><description>&lt;h2 id="comparing-dropbox-and-syncthing-my-first-video">Comparing Dropbox and Syncthing: My First Video&lt;/h2>
+&lt;p>In my latest video, I dive into a comprehensive comparison between Dropbox and Syncthing. This comparison explores the features, benefits, and potential drawbacks of each file synchronization solution, helping you determine which one might be the best fit for your needs.&lt;/p>
+&lt;h3 id="watch-the-video">Watch the Video&lt;/h3>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+ &lt;iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share; fullscreen" loading="eager" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube.com/embed/Yjxa02dttks?autoplay=0&amp;amp;controls=1&amp;amp;end=0&amp;amp;loop=0&amp;amp;mute=0&amp;amp;start=0" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" title="YouTube video">&lt;/iframe>
+ &lt;/div>
+
+&lt;h3 id="whats-next">What’s Next?&lt;/h3>
+&lt;p>I&amp;rsquo;m currently working on my next video, where I&amp;rsquo;ll guide you through the process of installing Syncthing on Linux. This upcoming video will provide step-by-step instructions to help you set up Syncthing on your Linux system and get started with secure file synchronization.&lt;/p></description></item><item><title>Almost done with my first YouTube video!</title><link>https://chrisallen.us/posts/almost-complete-on-my-first-youtube-video/</link><pubDate>Tue, 04 Jan 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/almost-complete-on-my-first-youtube-video/</guid><description>&lt;p>I am nearing completion of my first major YouTube video, &amp;ldquo;Dropbox vs. Syncthing.&amp;rdquo; Most of the editing is done, and I still need to create a segment of the PowerPoint presentation that will accompany my narration. Additionally, I am working on the script for my next video, which will demonstrate how to install Syncthing on Linux. The corresponding webpage is almost finished, though I still have a lot to do for the &amp;ldquo;Dropbox vs. Syncthing&amp;rdquo; video.&lt;/p></description></item><item><title>Welcome to chris allen's site</title><link>https://chrisallen.us/posts/my-first-post/</link><pubDate>Fri, 17 Dec 2021 08:20:23 -0500</pubDate><guid>https://chrisallen.us/posts/my-first-post/</guid><description>&lt;h2 id="welcome-to-my-new-website">Welcome to My New Website&lt;/h2>
+&lt;p>Welcome to my new website, where I share insights and updates on a variety of topics I&amp;rsquo;m currently exploring. Whether you&amp;rsquo;re interested in &lt;strong>Home Assistant&lt;/strong>, &lt;strong>Android&lt;/strong>, &lt;strong>Linux&lt;/strong>, &lt;strong>Proxmox&lt;/strong>, or &lt;strong>Catholic topics&lt;/strong>, you&amp;rsquo;ll find a range of articles and posts reflecting my current thoughts and projects.&lt;/p>
+&lt;p>In addition to this site, I am also working on &lt;a href="https://computerhacking101.com">Computer Hacking 101&lt;/a>, which features a YouTube channel dedicated to &lt;strong>computer hacking&lt;/strong> and &lt;strong>network optimization&lt;/strong>. This platform offers comprehensive guides and tutorials on enhancing your computer systems and home network. Currently, I&amp;rsquo;m developing several tutorials on &lt;strong>Syncthing&lt;/strong> for that site, designed to help you efficiently sync files and manage data across your devices.&lt;/p></description></item></channel></rss>

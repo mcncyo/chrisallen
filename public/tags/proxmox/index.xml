@@ -1,75 +1,22 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Proxmox on Chris allen&#39;s personal site</title>
-    <link>http://localhost:1313/tags/proxmox/</link>
-    <description>Recent content in Proxmox on Chris allen&#39;s personal site</description>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en-us</language>
-    <lastBuildDate>Mon, 22 Jul 2024 13:25:23 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/proxmox/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Housing Options: Build vs. Buy &amp; Other Life Updates</title>
-      <link>http://localhost:1313/blog/july-24-update/</link>
-      <pubDate>Mon, 22 Jul 2024 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july-24-update/</guid>
-      <description>House hunting or building. Work&amp;#39;s busy with new projects. Switched from Proxmox to TrueNAS; planning server upgrades soon.</description>
-    </item>
-    <item>
-      <title>Life, Work, Tech: Health Journey, Home Search, IT Setup</title>
-      <link>http://localhost:1313/blog/jan2024/</link>
-      <pubDate>Sat, 20 Jan 2024 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/jan2024/</guid>
-      <description>Join me as I navigate a weight loss journey, search for a new home, and balance a demanding IT job. Explore my tech setup with Proxmox, Pop!_OS, and robust backup solutions for a resilient digital environment.</description>
-    </item>
-    <item>
-      <title>Recent Challenges: Contract Work and Proxmox Server Issues</title>
-      <link>http://localhost:1313/blog/aug4update/</link>
-      <pubDate>Thu, 04 Aug 2022 11:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/aug4update/</guid>
-      <description>Navigating project cancellations and server setup issues: the challenges of contract work and Proxmox server installations.</description>
-    </item>
-    <item>
-      <title>Proxmox Server Upgrade: Solving Case and Heat Sink Issues</title>
-      <link>http://localhost:1313/blog/july282022update/</link>
-      <pubDate>Thu, 28 Jul 2022 08:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/july282022update/</guid>
-      <description>Encountering issues while upgrading your Proxmox server to a 1U rack mount case? Discover the challenges with motherboard stand-offs and heat sink compatibility, and learn how to address them effectively.</description>
-    </item>
-    <item>
-      <title>Optimized Proxmox Backup: Local Windows Share &amp; Backblaze</title>
-      <link>http://localhost:1313/blog/currentplansonproxmox/</link>
-      <pubDate>Sat, 16 Jul 2022 00:00:00 -0500</pubDate>
-      <guid>http://localhost:1313/blog/currentplansonproxmox/</guid>
-      <description>Efficient Proxmox backup: 4x500GB SSDs, Windows 10 share for ISO/backups, auto-sync to Backblaze for reliable offsite protection.</description>
-    </item>
-    <item>
-      <title>Upgrading Proxmox with 4x 500GB SSDs and ZFS</title>
-      <link>http://localhost:1313/blog/just-bought-4drives/</link>
-      <pubDate>Tue, 12 Jul 2022 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/just-bought-4drives/</guid>
-      <description>Integrate four 500GB SSDs into your Proxmox server with a ZFS setup. Learn about the striped and mirrored configuration for nearly 1TB of storage and get ready for a video tutorial on migrating to a 1U rackmount case.</description>
-    </item>
-    <item>
-      <title>Exciting Upgrades: Syncthing Tutorial, Hugo Migration, New Gear</title>
-      <link>http://localhost:1313/blog/beenverybusy2/</link>
-      <pubDate>Wed, 15 Jun 2022 11:25:52 -0500</pubDate>
-      <guid>http://localhost:1313/blog/beenverybusy2/</guid>
-      <description>Busy with work and life but planning new projects: Syncthing video, Hugo site migration, server upgrades, and networking enhancements.</description>
-    </item>
-    <item>
-      <title>Updating Tech Plans: Delaying pfSense on Proxmox, New Content</title>
-      <link>http://localhost:1313/blog/install-pfsence-on-proxmox-update/</link>
-      <pubDate>Tue, 21 Dec 2021 14:19:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/install-pfsence-on-proxmox-update/</guid>
-      <description>Delaying pfSense installation on Proxmox to focus on updating Computer Hacking 101 and creating new YouTube content. Considering whether to install pfSense on bare metal or Proxmox.</description>
-    </item>
-    <item>
-      <title>Upgrading Network: Adding 4-Port Ethernet Card to Proxmox</title>
-      <link>http://localhost:1313/blog/install-pfsence-on-proxmox/</link>
-      <pubDate>Sat, 18 Dec 2021 14:19:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/install-pfsence-on-proxmox/</guid>
-      <description>Upgraded my network with a 4-port Ethernet card for Proxmox and pfSense, adding VLANs for IoT and server management, plus two Pi-holes for DNS.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Proxmox on Chris Allen's personal site</title><link>https://chrisallen.us/tags/proxmox/</link><description>Recent content in Proxmox on Chris Allen's personal site</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 22 Jul 2024 13:25:23 -0500</lastBuildDate><atom:link href="https://chrisallen.us/tags/proxmox/index.xml" rel="self" type="application/rss+xml"/><item><title>Housing Options: Build vs. Buy &amp; Other Life Updates</title><link>https://chrisallen.us/posts/july-24-update/</link><pubDate>Mon, 22 Jul 2024 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/july-24-update/</guid><description>&lt;p>I’m still in the process of finding a new house within my hometown. We haven’t had much luck with our offers so far, so we’re considering building a house instead. We’ve talked to a company called UBuild It, but we’re still undecided about whether to go that route or just buy a house outright. We’re weighing our options and trying to figure out what’s best for us.&lt;/p>
+&lt;p>Work has been a bit of a mixed bag lately. Some days are incredibly busy, while others are quite slow. For the past couple of weeks, I’ve been focused on password resets for a new project. There are several other planned projects on the horizon, so it looks like I’ll be in for a busy end of the year.&lt;/p></description></item><item><title>Life, Work, Tech: Health Journey, Home Search, IT Setup</title><link>https://chrisallen.us/posts/jan2024/</link><pubDate>Sat, 20 Jan 2024 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/jan2024/</guid><description>&lt;h2 id="life--working">Life &amp;amp; Working&lt;/h2>
+&lt;p>I am currently motivated to embark on a weight loss journey due to some health concerns I am facing. My wife and I are exploring the possibility of moving soon, with the hope of finding the perfect home. I am currently engaged in a 40-hour IT support position in my local area. While the job can be stressful at times, I find satisfaction in the work, and I am fortunate to have a positive relationship with most of my colleagues. However, I do aspire to receive a more competitive salary for my efforts.&lt;/p></description></item><item><title>Proxmox Server Upgrade: Solving Case and Heat Sink Issues</title><link>https://chrisallen.us/posts/july282022update/</link><pubDate>Thu, 28 Jul 2022 08:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/july282022update/</guid><description>&lt;h2 id="proxmox-server-upgrade-challenges-and-solutions">Proxmox Server Upgrade: Challenges and Solutions&lt;/h2>
+&lt;p>I recently embarked on upgrading my Proxmox server by transferring it to a 1U rack mount case, but I&amp;rsquo;ve encountered a few issues along the way.&lt;/p>
+&lt;h3 id="1-motherboard-stand-offs-issue">1. Motherboard Stand-Offs Issue&lt;/h3>
+&lt;p>One challenge is related to the motherboard stand-offs. I&amp;rsquo;ll need to reposition them to fit the new case, but I&amp;rsquo;ve run into a small hiccup: I misplaced the specific wrench required for this task. I&amp;rsquo;m in the process of obtaining a replacement wrench set to resolve this issue.&lt;/p></description></item><item><title>Optimized Proxmox Backup: Local Windows Share &amp; Backblaze</title><link>https://chrisallen.us/posts/currentplansonproxmox/</link><pubDate>Sat, 16 Jul 2022 00:00:00 -0500</pubDate><guid>https://chrisallen.us/posts/currentplansonproxmox/</guid><description>&lt;p>For an efficient Proxmox server backup setup, I plan to utilize four 500GB solid-state drives (SSDs) to ensure robust storage performance. I will configure a Windows share on my Windows 10 PC, which will host ISO files and backups. This approach allows me to offload backup storage from the Proxmox server itself, optimizing its available space. Additionally, all backups will be automatically synced to my Backblaze account, providing a reliable offsite backup solution.&lt;/p></description></item><item><title>Upgrading Proxmox with 4x 500GB SSDs and ZFS</title><link>https://chrisallen.us/posts/just-bought-4drives/</link><pubDate>Tue, 12 Jul 2022 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/just-bought-4drives/</guid><description>&lt;h2 id="quick-update-new-ssds-for-proxmox-server">Quick Update: New SSDs for Proxmox Server&lt;/h2>
+&lt;p>I’ve recently purchased &lt;strong>four 500GB solid-state drives&lt;/strong> from Amazon, and I’m excited to integrate them into my Proxmox server setup. These drives will be configured with the &lt;strong>ZFS file system&lt;/strong>, where &lt;strong>two drives will be striped and mirrored&lt;/strong>, providing a robust and efficient storage solution. This setup will give me just under &lt;strong>1TB of total storage&lt;/strong> for Proxmox.&lt;/p>
+&lt;p>In the future, I plan to expand this setup by adding more drives to my new Proxmox server. Additionally, I’m considering making a &lt;strong>quick video tutorial&lt;/strong> on migrating my Proxmox server from its current case to a new &lt;strong>1U rackmount case&lt;/strong>.&lt;/p></description></item><item><title>Exciting Upgrades: Syncthing Tutorial, Hugo Migration, New Gear</title><link>https://chrisallen.us/posts/beenverybusy2/</link><pubDate>Wed, 15 Jun 2022 11:25:52 -0500</pubDate><guid>https://chrisallen.us/posts/beenverybusy2/</guid><description>&lt;h1 id="exciting-updates-new-projects-and-recent-purchases">Exciting Updates: New Projects and Recent Purchases&lt;/h1>
+&lt;p>I&amp;rsquo;ve been incredibly busy with work and personal commitments recently, which has limited my time for YouTube and managing my websites. However, I’m thrilled to share that I&amp;rsquo;ve managed to release a few new videos on my &lt;a href="https://www.youtube.com/@computerhacking101">computer hacking 101&lt;/a>. Looking ahead, I’ll be dedicating the next two weeks to focusing on some exciting projects.&lt;/p>
+&lt;h2 id="upcoming-projects-and-video-content">Upcoming Projects and Video Content&lt;/h2>
+&lt;h3 id="comprehensive-syncthing-tutorial">Comprehensive Syncthing Tutorial&lt;/h3>
+&lt;p>One of my major upcoming projects is a &lt;strong>comprehensive Syncthing tutorial&lt;/strong>. This video will cover everything you need to know about &lt;a href="https://syncthing.net">Syncthing&lt;/a>, including setup and practical uses. Stay tuned for in-depth insights into this powerful synchronization tool.&lt;/p></description></item><item><title>Updating Tech Plans: Delaying pfSense on Proxmox, New Content</title><link>https://chrisallen.us/posts/install-pfsence-on-proxmox-update/</link><pubDate>Tue, 21 Dec 2021 14:19:23 -0500</pubDate><guid>https://chrisallen.us/posts/install-pfsence-on-proxmox-update/</guid><description>&lt;p>I am currently planning to delay the installation of &lt;strong>pfSense&lt;/strong> on my &lt;strong>Proxmox server&lt;/strong>. Instead, I will focus on enhancing my website and working on the &lt;strong>YouTube videos&lt;/strong> I have been creating. You can check out my work at &lt;a href="https://computerhacking101.com">Computer Hacking 101&lt;/a>.&lt;/p>
+&lt;p>In the meantime, I am considering installing &lt;strong>pfSense&lt;/strong> on another system. I have a few computers that I might use for this purpose. I am still undecided on whether to install &lt;strong>pfSense&lt;/strong> directly on bare metal or to first install &lt;strong>Proxmox&lt;/strong> and then set up &lt;strong>pfSense&lt;/strong> within Proxmox.&lt;/p></description></item><item><title>Upgrading Network: Adding 4-Port Ethernet Card to Proxmox</title><link>https://chrisallen.us/posts/install-pfsence-on-proxmox/</link><pubDate>Sat, 18 Dec 2021 14:19:23 -0500</pubDate><guid>https://chrisallen.us/posts/install-pfsence-on-proxmox/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>I&amp;rsquo;ve recently made a significant upgrade to my home network by purchasing a 4-port Ethernet card on eBay. This new addition will be a game changer for my Proxmox server setup, allowing me to better manage and optimize my network infrastructure.&lt;/p>
+&lt;h2 id="why-a-4-port-ethernet-card">Why a 4-Port Ethernet Card?&lt;/h2>
+&lt;p>Adding a 4-port Ethernet card to my Proxmox server provides several benefits:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>Enhanced Network Management&lt;/strong>: With four Ethernet ports, I can manage multiple network interfaces more effectively.&lt;/li>
+&lt;li>&lt;strong>VLAN Configuration&lt;/strong>: This setup allows me to create Virtual Local Area Networks (VLANs) to separate different types of network traffic, improving security and performance.&lt;/li>
+&lt;/ul>
+&lt;h2 id="integrating-with-pfsense">Integrating with pfSense&lt;/h2>
+&lt;p>I plan to use the 4-port Ethernet card on my pfSense server to control my entire network. Here&amp;rsquo;s how:&lt;/p></description></item></channel></rss>

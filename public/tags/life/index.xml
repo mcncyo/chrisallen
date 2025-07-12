@@ -1,33 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
-  <channel>
-    <title>Life on Chris allen&#39;s personal site</title>
-    <link>http://localhost:1313/tags/life/</link>
-    <description>Recent content in Life on Chris allen&#39;s personal site</description>
-    <generator>Hugo -- 0.147.6</generator>
-    <language>en-us</language>
-    <lastBuildDate>Fri, 06 Jun 2025 13:25:23 -0500</lastBuildDate>
-    <atom:link href="http://localhost:1313/tags/life/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>June 2025 Update: Business Growth, Career Changes, and a Well-Deserved Getaway</title>
-      <link>http://localhost:1313/blog/june2025/</link>
-      <pubDate>Fri, 06 Jun 2025 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/june2025/</guid>
-      <description>Discover how I’m navigating family health challenges, balancing a demanding full-time job, and finding time for self-care. Read about my journey through these busy times and my plans for a more balanced future.</description>
-    </item>
-    <item>
-      <title>Life, Work, Tech: Health Journey, Home Search, IT Setup</title>
-      <link>http://localhost:1313/blog/jan2024/</link>
-      <pubDate>Sat, 20 Jan 2024 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/jan2024/</guid>
-      <description>Join me as I navigate a weight loss journey, search for a new home, and balance a demanding IT job. Explore my tech setup with Proxmox, Pop!_OS, and robust backup solutions for a resilient digital environment.</description>
-    </item>
-    <item>
-      <title>Balancing Work, Family, and Self-Care: Life Updates</title>
-      <link>http://localhost:1313/blog/long-over-do-update/</link>
-      <pubDate>Sat, 28 Oct 2023 13:25:23 -0500</pubDate>
-      <guid>http://localhost:1313/blog/long-over-do-update/</guid>
-      <description>Discover how I’m navigating family health challenges, balancing a demanding full-time job, and finding time for self-care. Read about my journey through these busy times and my plans for a more balanced future.</description>
-    </item>
-  </channel>
-</rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Life on Chris Allen's personal site</title><link>https://chrisallen.us/tags/life/</link><description>Recent content in Life on Chris Allen's personal site</description><generator>Hugo</generator><language>en</language><lastBuildDate>Fri, 06 Jun 2025 13:25:23 -0500</lastBuildDate><atom:link href="https://chrisallen.us/tags/life/index.xml" rel="self" type="application/rss+xml"/><item><title>June 2025 Update: Business Growth, Career Changes, and a Well-Deserved Getaway</title><link>https://chrisallen.us/posts/june2025/</link><pubDate>Fri, 06 Jun 2025 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/june2025/</guid><description>&lt;h2 id="work-life-updates">Work Life Updates&lt;/h2>
+&lt;p>A few weeks ago, my work hours shifted slightly as we prepare for new testing initiatives. One major change: we’ve started issuing Windows 11 machines instead of Windows 10—an exciting step forward in modernizing our systems.&lt;/p>
+&lt;p>Another big change is that my office is moving into the imaging room, which is a welcome upgrade during these hot summer months thanks to its excellent air conditioning.&lt;/p>
+&lt;h2 id="technest-creations-progress">TechNest Creations Progress&lt;/h2>
+&lt;p>On the business front, &lt;strong>TechNest Creations&lt;/strong> is picking up momentum. I’ve launched a &lt;a href="https://technestcreations.com">“Coming Soon” page on the website&lt;/a>, registered for an EIN, and opened both checking and savings accounts for the business.&lt;/p></description></item><item><title>Life, Work, Tech: Health Journey, Home Search, IT Setup</title><link>https://chrisallen.us/posts/jan2024/</link><pubDate>Sat, 20 Jan 2024 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/jan2024/</guid><description>&lt;h2 id="life--working">Life &amp;amp; Working&lt;/h2>
+&lt;p>I am currently motivated to embark on a weight loss journey due to some health concerns I am facing. My wife and I are exploring the possibility of moving soon, with the hope of finding the perfect home. I am currently engaged in a 40-hour IT support position in my local area. While the job can be stressful at times, I find satisfaction in the work, and I am fortunate to have a positive relationship with most of my colleagues. However, I do aspire to receive a more competitive salary for my efforts.&lt;/p></description></item><item><title>Balancing Work, Family, and Self-Care: Life Updates</title><link>https://chrisallen.us/posts/long-over-do-update/</link><pubDate>Sat, 28 Oct 2023 13:25:23 -0500</pubDate><guid>https://chrisallen.us/posts/long-over-do-update/</guid><description>&lt;h2 id="introduction">Introduction&lt;/h2>
+&lt;p>It’s been a while since my last update, and I wanted to share what’s been going on in my life recently. From family health issues to the demands of a full-time job, life has been incredibly busy. Here’s a glimpse into what has been happening and how I’ve been managing everything.&lt;/p>
+&lt;h2 id="family-health-concerns">Family Health Concerns&lt;/h2>
+&lt;p>In recent months, my family has faced some significant health challenges. Both my grandma and my aunt have been in the hospital, which has been a major concern for me. Navigating through hospital visits, treatments, and managing their care has been quite overwhelming. It’s a reminder of the importance of family and how we need to support each other during tough times.&lt;/p></description></item></channel></rss>
