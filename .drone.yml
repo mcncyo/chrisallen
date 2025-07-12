@@ -16,8 +16,8 @@ steps:
     commands:
       - hugo --minify
 
-  - name: deploy via rsync
-    image: appleboy/drone-rsync
+  - name: deploy via sync
+    image: appleboy/drone-sync
     settings:
       host: server1.chrisallen.us
       username: mcncyo
