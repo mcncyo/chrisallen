@@ -6,10 +6,10 @@ clone:
   disable: false
 
 steps:
-  - name: install npm dependencies
-    image: node:18-alpine
-    commands:
-      - npm install
+# - name: install npm dependencies
+#   image: node:18-alpine
+#   commands:
+#     - npm install
 
   - name: hugo build
     image: klakegg/hugo:ext-alpine
@@ -19,8 +19,8 @@ steps:
   - name: deploy via rsync
     image: appleboy/drone-rsync
     settings:
-      host: your.vps.ip.or.domain
-      username: youruser
+      host: server1.chrisallen.us
+      username: mcncyo
       port: 22
       key:
         from_secret: webserverkey
