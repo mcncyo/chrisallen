@@ -91,8 +91,8 @@ steps:
 
       payload = {
           "host": "chrisallen.us",
-          "key": os.environ.get("INDEXNOW_KEY", ""),
-          "keyLocation": f"https://chrisallen.us/{os.environ.get('INDEXNOW_KEY', '')}.txt",
+          "key": "51ccd95176a34334891dc90cab8d3dc7"
+          "keyLocation": f"https://chrisallen.us/51ccd95176a34334891dc90cab8d3dc7.txt",
           "urlList": urls
       }
 
