@@ -8,6 +8,8 @@ steps:
     commands:
       - umask 0022
       - hugo --minify --baseURL "https://chrisallen.us/"
+      - ls -lh public
+      - ls -lh public/index.html || echo "index.html missing"
 
   - name: deploy via rsync
     image: appleboy/drone-scp
@@ -35,6 +37,7 @@ steps:
         from_secret: webserverkey
       script:
         - chmod -R o+rx /srv/www/chrisallen
+
 
 
 
