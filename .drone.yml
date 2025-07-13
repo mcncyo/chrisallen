@@ -6,15 +6,11 @@ clone:
   disable: false
 
 steps:
-# - name: install npm dependencies
-#   image: node:18-alpine
-#   commands:
-#     - npm install
-
   - name: hugo build
     image: klakegg/hugo:ext-alpine
     commands:
-      - hugo --environment production --minify
+      - umask 0022
+      - hugo --minify --baseURL "https://chrisallen.us/"
 
   - name: deploy via rsync
     image: appleboy/drone-scp
@@ -25,12 +21,24 @@ steps:
       key:
         from_secret: webserverkey
       source: public/
-      target: /home/mcncyo/websites/chrisallen/
+      target: /srv/www/chrisallen
       rsync: true
       rm: true
       strip_components: 1
       rsync_args:
         - --delete
+
+  - name: fix permissions on server
+    image: appleboy/drone-ssh
+    settings:
+      host: server1.chrisallen.us
+      username: mcncyo
+      port: 22
+      key:
+        from_secret: webserverkey
+      script:
+        - chmod -R o+rx /srv/www/chrisallen
+
 
 
 
