@@ -112,18 +112,25 @@ steps:
           print("No URLs to submit.")
       PY
 
-  - name: purge Cloudflare cache
-    image: alpine:latest
-    environment:
+- name: purge Cloudflare cache
+  image: alpine:latest
+  environment:
     CF_ZONE_ID:
       from_secret: CF_ZONE_ID
     CF_API_TOKEN:
       from_secret: CF_API_TOKEN
-    commands:
+  commands:
     - apk add --no-cache curl
     - |
+      if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
+        echo "ERROR: Cloudflare secrets missing!"
+        exit 1
+      fi
+
+      echo "Zone ID: $CF_ZONE_ID"
+      echo "Token length: ${#CF_API_TOKEN}"
+
       if [ -s changed_urls.txt ]; then
-        # Build JSON array manually
         URLS=$(awk NF changed_urls.txt | sed 's/^/"/;s/$/"/' | paste -sd "," -)
         JSON="{\"files\":[${URLS}]}"
         echo "Cloudflare JSON payload:"
@@ -136,6 +143,5 @@ steps:
       else
         echo "No changed URLs to purge."
       fi
-
 
 
