@@ -116,10 +116,8 @@ steps:
   - name: purge Cloudflare cache
     image: alpine:latest
     environment:
-      CF_ZONE_ID:
-        from_secret: CF_ZONE_ID
-      CF_API_TOKEN:
-        from_secret: CF_API_TOKEN
+      CF_ZONE_ID: 1a4e34cbcbb6e0062f21cc5036a075a4
+      CF_API_TOKEN: GTFq-C8JwUFiQlBSUsu2rW37NvIZTS_8-02q5R98
     commands:
       - apk add --no-cache curl
       - |
