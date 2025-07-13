@@ -3,6 +3,11 @@ type: docker
 name: build-and-deploy
 
 steps:
+  - name: git submodules
+    image: alpine/git
+    commands:
+      - git submodule update --init --recursive
+
   - name: hugo build
     image: klakegg/hugo:ext-alpine
     commands:
@@ -37,6 +42,7 @@ steps:
         from_secret: webserverkey
       script:
         - chmod -R o+rx /srv/www/chrisallen
+
 
 
 
