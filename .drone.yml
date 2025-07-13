@@ -72,9 +72,7 @@ steps:
 
   - name: submit sitemap to IndexNow
     image: python:3.11-alpine
-    environment:
-    INDEXNOW_KEY:
-      from_secret: INDEXNOW_KEY
+
     commands:
     - |
       pip install --no-cache-dir requests
@@ -91,7 +89,7 @@ steps:
 
       payload = {
           "host": "chrisallen.us",
-          "key": "51ccd95176a34334891dc90cab8d3dc7"
+          "key": "51ccd95176a34334891dc90cab8d3dc7",
           "keyLocation": f"https://chrisallen.us/51ccd95176a34334891dc90cab8d3dc7.txt",
           "urlList": urls
       }
