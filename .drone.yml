@@ -112,36 +112,37 @@ steps:
           print("No URLs to submit.")
       PY
 
-- name: purge Cloudflare cache
-  image: alpine:latest
-  environment:
-    CF_ZONE_ID:
-      from_secret: CF_ZONE_ID
-    CF_API_TOKEN:
-      from_secret: CF_API_TOKEN
-  commands:
-    - apk add --no-cache curl
-    - |
-      if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
-        echo "ERROR: Cloudflare secrets missing!"
-        exit 1
-      fi
 
-      echo "Zone ID: $CF_ZONE_ID"
-      echo "Token length: ${#CF_API_TOKEN}"
+  - name: purge Cloudflare cache
+    image: alpine:latest
+    environment:
+      CF_ZONE_ID:
+        from_secret: CF_ZONE_ID
+      CF_API_TOKEN:
+        from_secret: CF_API_TOKEN
+    commands:
+      - apk add --no-cache curl
+      - |
+          if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
+            echo "ERROR: Cloudflare secrets missing!"
+            exit 1
+          fi
 
-      if [ -s changed_urls.txt ]; then
-        URLS=$(awk NF changed_urls.txt | sed 's/^/"/;s/$/"/' | paste -sd "," -)
-        JSON="{\"files\":[${URLS}]}"
-        echo "Cloudflare JSON payload:"
-        echo "${JSON}"
+          echo "Zone ID: $CF_ZONE_ID"
+          echo "Token length: ${#CF_API_TOKEN}"
 
-        curl -v -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
-          -H "Authorization: Bearer ${CF_API_TOKEN}" \
-          -H "Content-Type: application/json" \
-          --data "${JSON}"
-      else
-        echo "No changed URLs to purge."
-      fi
+          if [ -s changed_urls.txt ]; then
+            URLS=$(awk NF changed_urls.txt | sed 's/^/"/;s/$/"/' | paste -sd "," -)
+            JSON="{\"files\":[${URLS}]}"
+            echo "Cloudflare JSON payload:"
+            echo "${JSON}"
+
+            curl -v -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
+              -H "Authorization: Bearer ${CF_API_TOKEN}" \
+              -H "Content-Type: application/json" \
+              --data "${JSON}"
+          else
+            echo "No changed URLs to purge."
+          fi
 
 
