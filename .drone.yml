@@ -14,7 +14,7 @@ steps:
   - name: hugo build
     image: klakegg/hugo:ext-alpine
     commands:
-      - hugo --minify --baseURL "https://chrisallen.us/"
+      - hugo --environment production --minify
 
   - name: deploy via rsync
     image: appleboy/drone-scp
