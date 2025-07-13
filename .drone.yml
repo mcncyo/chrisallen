@@ -71,30 +71,47 @@ steps:
         - chmod -R o+rx /srv/www/chrisallen
 
   - name: submit sitemap to IndexNow
-    image: curlimages/curl:latest
+    image: python:3.11-alpine
     environment:
-      INDEXNOW_KEY:
-        from_secret: INDEXNOW_KEY
+    INDEXNOW_KEY:
+      from_secret: INDEXNOW_KEY
     commands:
-      - |
-        if [ -s changed_urls.txt ]; then
-          URLS=$(cat changed_urls.txt | jq -R . | jq -s .)
-        else
-          URLS="[]"
-        fi
+    - |
+      pip install --no-cache-dir requests
 
-        cat <<EOF > payload.json
-        {
+      python <<'PY'
+      import json, os, pathlib, requests
+
+      # Read changed URLs file
+      p = pathlib.Path("changed_urls.txt")
+      if p.exists() and p.stat().st_size > 0:
+          urls = [line.strip() for line in p.read_text().splitlines() if line.strip()]
+      else:
+          urls = []
+
+      payload = {
           "host": "chrisallen.us",
-          "key": "${INDEXNOW_KEY}",
-          "keyLocation": "https://chrisallen.us/${INDEXNOW_KEY}.txt",
-          "urlList": $URLS
-        }
-        EOF
+          "key": os.environ.get("INDEXNOW_KEY", ""),
+          "keyLocation": f"https://chrisallen.us/{os.environ.get('INDEXNOW_KEY', '')}.txt",
+          "urlList": urls
+      }
 
-        curl -s -X POST "https://api.indexnow.org/indexnow" \
-          -H "Content-Type: application/json" \
-          --data-binary @payload.json
+      print("Payload:")
+      print(json.dumps(payload, indent=2))
+
+      if urls:
+          resp = requests.post(
+              "https://api.indexnow.org/indexnow",
+              json=payload,
+              headers={"Content-Type": "application/json"},
+              timeout=30
+          )
+          print("IndexNow Response:")
+          print(resp.status_code, resp.text)
+      else:
+          print("No URLs to submit.")
+      PY
+
 
   - name: purge Cloudflare cache
     image: curlimages/curl:latest
