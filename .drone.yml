@@ -2,9 +2,6 @@ kind: pipeline
 type: docker
 name: build-and-deploy
 
-clone:
-  disable: false
-
 steps:
   - name: hugo build
     image: klakegg/hugo:ext-alpine
@@ -38,6 +35,7 @@ steps:
         from_secret: webserverkey
       script:
         - chmod -R o+rx /srv/www/chrisallen
+
 
 
 
