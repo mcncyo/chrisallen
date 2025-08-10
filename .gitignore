@@ -25,7 +25,7 @@ package-lock.json
 *.log
 
 # Themes (if using submodules, you usually don’t want to ignore this)
-# themes/
+themes/
 
 # Git submodule working dirs (optional if needed)
 .git/modules/
