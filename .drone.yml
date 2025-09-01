@@ -51,11 +51,10 @@ steps:
       port: 22
       key:
         from_secret: webserverkey
-      source: public/
+      source: public/**
       target: /home/mcncyo/websites/chrisallen/
       rsync: true
       rm: true
-      strip_components: 1
       rsync_args:
         - --delete
 
