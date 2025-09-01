@@ -1,43 +1,85 @@
 ---
-title: "Exciting Upgrades: Syncthing Tutorial, Hugo Migration, New Gear"
+title: "From WordPress to Hugo: My Website Migration Journey & Tech Upgrades"
 date: 2022-06-15T11:25:52-05:00
-tags: ["blog", "syncthing", "eBay", "Proxmox"]
-description: "Busy with work and life but planning new projects: Syncthing video, Hugo site migration, server upgrades, and networking enhancements."
+tags: ["hugo", "wordpress", "syncthing", "proxmox", "self-hosting", "homelab", "server-migration"]
+description: "Discover my journey of migrating from WordPress to Hugo, setting up Syncthing for file synchronization, and upgrading my homelab with a 1U server and HP ProCurve switch."
 type: post
 weight: 25
 showTableOfContents: true
+featuredImage: "/images/server-rack-upgrade.jpg"
+featuredImageAlt: "Homelab server rack with new 1U server and network switch"
+canonicalURL: "https://chrisallen.us/posts/beenverybusy2/"
 ---
 
-# Exciting Updates: New Projects and Recent Purchases
+*Last updated: June 15, 2022 | Reading time: 4 minutes*
 
-I've been incredibly busy with work and personal commitments recently, which has limited my time for YouTube and managing my websites. However, I’m thrilled to share that I've managed to release a few new videos on my [computer hacking 101](https://www.youtube.com/@computerhacking101). Looking ahead, I’ll be dedicating the next two weeks to focusing on some exciting projects.
+# My Homelab Evolution: Website Migration & Infrastructure Upgrades
 
-## Upcoming Projects and Video Content
+Balancing a full-time job with content creation and homelab projects is always challenging, but I'm excited to share some significant updates on my recent tech endeavors. In this post, I'll walk you through my website migration from WordPress to Hugo, upcoming Syncthing tutorial, and the latest additions to my homelab setup.
 
-### Comprehensive Syncthing Tutorial
+## Why I'm Moving from WordPress to Hugo
 
-One of my major upcoming projects is a **comprehensive Syncthing tutorial**. This video will cover everything you need to know about [Syncthing](https://syncthing.net), including setup and practical uses. Stay tuned for in-depth insights into this powerful synchronization tool.
+After years of using WordPress, I've decided to migrate to [Hugo](https://gohugo.io/), a static site generator. Here's why:
 
-### Website Migration: WordPress to Hugo
+- **Blazing Fast Performance**: Static sites load significantly faster than dynamic WordPress sites
+- **Enhanced Security**: No database means fewer vulnerabilities to exploit
+- **Simplified Maintenance**: No more worrying about PHP updates or database optimization
+- **Version Control Friendly**: All content is stored in Markdown files, making it easier to track changes
 
-I’m also in the process of **migrating both of my websites from WordPress to Hugo static sites**. This migration is aimed at enhancing performance and improving user experience. Hugo's speed and flexibility will provide a more streamlined and efficient platform for my content.
+## Upcoming Content: Syncthing Deep Dive
 
-## Recent Purchases and Upgrades
+I'm working on an in-depth Syncthing tutorial that will cover:
 
-I’ve recently made several upgrades to my tech setup, including:
+- **Getting Started**: Installation and initial setup
+- **Configuration**: Advanced sync options and best practices
+- **Use Cases**: Real-world applications for personal and professional use
+- **Troubleshooting**: Common issues and how to resolve them
 
-- **1U Server Case**: I’m moving my Proxmox server into a new 1U server case. This upgrade required new heat sinks for my Proxmox CPUs, improving cooling and performance.
-  
-- **HP ProCurve 24-Port 1GB Switch**: This networking switch will significantly expand my network capabilities, allowing me to connect more devices and optimize network performance.
-  
-- **TP-Link Archer C9 Router**: I’ve installed DD-WRT firmware on my TP-Link Archer C9 v1. Although I plan to upgrade the router eventually, this setup will serve me well for the next few weeks to a couple of months.
+[Syncthing](https://syncthing.net) has been a game-changer for my workflow, especially for keeping files in sync across multiple devices securely without relying on third-party cloud services.
 
-Additionally, I’m planning to add a few **4 500GB hard drives** to my Proxmox server and create a **ZFS pool** for better data management and reliability.
+## The Migration Process: WordPress to Hugo
 
-## Stay Tuned
+Migrating from WordPress to Hugo involves several key steps:
 
-Keep an eye out for more updates and detailed videos on these exciting developments. Your support means a lot, and I can’t wait to share the results with you!
+1. **Content Export**: Converting WordPress posts to Markdown format
+2. **Theme Selection**: Choosing a responsive, SEO-friendly Hugo theme
+3. **URL Structure**: Setting up proper redirects to maintain SEO rankings
+4. **Deployment**: Moving from PHP/MySQL to static file hosting
+
+## Homelab Upgrades: Better Performance & Networking
+
+### 1U Server Case Upgrade
+
+I've transitioned my Proxmox server into a new 1U rackmount case, which required some careful planning:
+
+- **Cooling Solution**: Installed low-profile Noctua heat sinks to handle the thermal challenges of 1U form factor
+- **Cable Management**: Optimized airflow with custom-length cables and proper routing
+- **Power Efficiency**: The compact design reduces power consumption while maintaining performance
+
+### Network Infrastructure: HP ProCurve 24-Port Switch
+
+The new HP ProCurve 24-Port 1GB switch brings several advantages:
+
+- **VLAN Support**: Better network segmentation for security and performance
+- **Link Aggregation**: Combining multiple ports for higher bandwidth
+- **Enterprise Features**: Advanced QoS and traffic monitoring capabilities
+- **Reliability**: HP's lifetime warranty ensures long-term value
+
+## Looking Ahead
+
+These upgrades are just the beginning. Future plans include:
+
+- **TP-Link Archer C9 Router Upgrade**: Currently running DD-WRT firmware, with plans for a more powerful solution
+- **Storage Expansion**: Adding 4x 500GB hard drives to create a ZFS pool for better data management
+- **Backup Strategy**: Implementing a robust solution using [Restic](https://restic.net/) and Backblaze B2
+- **Monitoring**: Setting up Grafana and Prometheus for system monitoring
+- **Documentation**: Creating detailed guides on the entire migration process
+
+## Final Thoughts
+
+Migrating from WordPress to Hugo and upgrading my homelab infrastructure has been challenging but incredibly rewarding. The performance improvements and reduced maintenance overhead make these changes well worth the effort.
+
+*Have you migrated from WordPress to a static site generator? Or do you have experience with Syncthing in your homelab? I'd love to hear about your experiences in the comments below!*
 
 ---
-
-Feel free to [subscribe to my YouTube channel](https://www.youtube.com/@computerhacking101) for the latest content and updates. 
+*For more tech insights and homelab updates, consider [subscribing to my YouTube channel](https://www.youtube.com/@computerhacking101) for the latest content and tutorials.*
