@@ -10,6 +10,8 @@ steps:
 
   - name: hugo build
     image: klakegg/hugo:ext-alpine
+    environment:
+      HUGO_ENV: production
     commands:
       - umask 0022
       - hugo --minify --baseURL "https://chrisallen.us/"
