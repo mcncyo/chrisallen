@@ -52,7 +52,7 @@ steps:
       key:
         from_secret: webserverkey
       source: public/
-      target: /srv/www/chrisallen
+      target: /home/mcncyo/websites/chrisallen/
       rsync: true
       rm: true
       strip_components: 1
@@ -68,7 +68,7 @@ steps:
       key:
         from_secret: webserverkey
       script:
-        - chmod -R o+rx /srv/www/chrisallen
+        - chmod -R o+rx /home/mcncyo/websites/chrisallen/
 
   - name: submit sitemap to IndexNow
     image: python:3.11-alpine
