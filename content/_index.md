@@ -19,7 +19,11 @@ Documenting my journey of optimizing my TrueNAS setup with Docker and implementi
 
 ## 📝 Latest Blog Posts
 
-{{< recent-posts 5 >}}
+{{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+- [{{ .Title }}]({{ .RelPermalink }}) - {{ .Date.Format "January 2, 2006" }}
+{{ end }}
+
+[View all posts →](/posts/)
 
 ## 📬 Get in Touch
 

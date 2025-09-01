@@ -1,11 +1,11 @@
 ---
-title: "KINGJOY 75" Tripod Review: Best Budget Tripod for Beginners?"
+title: 'KINGJOY 75" Tripod Review: Best Budget Tripod for Beginners?'
 date: 2022-09-11T00:00:00-05:00
 tags: ["photography", "videography", "camera-gear", "tripod-review", "amazon-finds", "content-creation"]
 description: "In-depth review of the KINGJOY 75-inch tripod - an affordable, versatile option for both smartphone and DSLR users. Is this $33 tripod worth your money?"
 type: post
 weight: 25
-showTableOfContents: true
+showTableOfContents: false
 featuredImage: "/images/kingjoy-tripod-review.jpg"
 featuredImageAlt: "KINGJOY 75-inch tripod in use with a smartphone mounted"
 canonicalURL: "https://chrisallen.us/posts/buying-a-new-tripod/"
