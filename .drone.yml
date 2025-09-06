@@ -30,7 +30,7 @@ steps:
       CLOUDFLARE_ACCOUNT_ID:
         from_secret: CF_ACCOUNT_ID     # set in Drone
       CLOUDFLARE_API_TOKEN:
-        from_secret: CF_API_TOKEN      # set in Drone (Pages:Edit)
+        from_secret: CLOUDFLARE_API_TOKEN     # set in Drone (Pages:Edit)
     commands:
       - corepack enable || true
       - |
