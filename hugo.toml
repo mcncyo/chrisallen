@@ -16,6 +16,7 @@ title = "Chris Allen's personal site"
 [minify]
   disableXML = true  # Keep XML sitemap readable
   tdewolff.html.keepWhitespace = true  # Keep HTML formatting
+  minifyOutput = true
 
 
 [production]
@@ -99,6 +100,6 @@ title = "Chris Allen's personal site"
     endLevel = 4
     ordered = false
 
-[minify]
-    minifyOutput = true
+
+    
 
