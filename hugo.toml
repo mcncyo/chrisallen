@@ -8,6 +8,15 @@ pygmentsStyle = "monokai"
 theme = "gokarna"
 title = "Chris Allen's personal site"
 
+# Enable asset fingerprinting for better caching
+[build]
+  writeStats = true
+  useResourceCacheWhen = "fallback"
+
+[minify]
+  disableXML = true  # Keep XML sitemap readable
+  tdewolff.html.keepWhitespace = true  # Keep HTML formatting
+
 
 [production]
   baseURL = "https://chrisallen.us/"

@@ -18,128 +18,63 @@ steps:
       - ls -lh public
       - ls -lh public/index.html || echo "index.html missing"
 
-# Uncomment the one you want!
-
-# One-time full update:
+  # Full crawl to populate changed_urls.txt for IndexNow
   - name: extract all URLs
     image: python:3.11-alpine
     commands:
       - python .drone/scripts/extract_all_urls.py
 
-# Normal incremental updates:
-#  - name: extract changed URLs
-#    image: python:3.11-alpine
-#    environment:
-#      CHANGE_WINDOW_HOURS: 24
-#    commands:
- #     - python .drone/scripts/extract_changed_urls.py
-
-  - name: show changed URLs
-    image: alpine
-    commands:
-      - |
-        if [ -s changed_urls.txt ]; then
-          echo "Changed URLs found:"
-          cat changed_urls.txt
-        else
-          echo "No changed URLs found."
-        fi
-
-  - name: deploy via rsync
-    image: appleboy/drone-scp
-    settings:
-      host: server1.chrisallen.us
-      username: mcncyo
-      port: 22
-      key:
-        from_secret: webserverkey
-      source: public/**
-      target: /home/mcncyo/websites/chrisallen/
-      rsync: true
-      rm: true
-      rsync_args:
-        - --delete
-
-  - name: fix permissions on server
-    image: appleboy/drone-ssh
-    settings:
-      host: server1.chrisallen.us
-      username: mcncyo
-      port: 22
-      key:
-        from_secret: webserverkey
-      script:
-        - chmod -R o+rx /home/mcncyo/websites/chrisallen/
-
-  - name: submit sitemap to IndexNow
-    image: python:3.11-alpine
-
-    commands:
-    - |
-      pip install --no-cache-dir requests
-
-      python <<'PY'
-      import json, os, pathlib, requests
-
-      # Read changed URLs file
-      p = pathlib.Path("changed_urls.txt")
-      if p.exists() and p.stat().st_size > 0:
-          urls = [line.strip() for line in p.read_text().splitlines() if line.strip()]
-      else:
-          urls = []
-
-      payload = {
-          "host": "chrisallen.us",
-          "key": "51ccd95176a34334891dc90cab8d3dc7",
-          "keyLocation": f"https://chrisallen.us/51ccd95176a34334891dc90cab8d3dc7.txt",
-          "urlList": urls
-      }
-
-      print("Payload:")
-      print(json.dumps(payload, indent=2))
-
-      if urls:
-          resp = requests.post(
-              "https://api.indexnow.org/indexnow",
-              json=payload,
-              headers={"Content-Type": "application/json"},
-              timeout=30
-          )
-          print("IndexNow Response:")
-          print(resp.status_code, resp.text)
-      else:
-          print("No URLs to submit.")
-      PY
-
-
-  - name: purge Cloudflare cache
-    image: alpine:latest
+  - name: deploy to Cloudflare Pages
+    image: node:20-alpine
     environment:
-      CF_ZONE_ID: 1a4e34cbcbb6e0062f21cc5036a075a4
-      CF_API_TOKEN: 93aef2b2393732e573243ffcb1986d8d90c0f
+      CLOUDFLARE_ACCOUNT_ID:
+        from_secret: CF_ACCOUNT_ID     # set in Drone
+      CLOUDFLARE_API_TOKEN:
+        from_secret: CF_API_TOKEN      # set in Drone (Pages:Edit)
     commands:
-      - apk add --no-cache curl
+      - corepack enable || true
       - |
-          if [ -z "$CF_ZONE_ID" ] || [ -z "$CF_API_TOKEN" ]; then
-            echo "ERROR: Cloudflare secrets missing!"
-            exit 1
-          fi
+        if [ "$DRONE_BRANCH" = "main" ]; then
+          npx --yes wrangler@3 pages deploy public --project-name=chrisallen
+        else
+          npx --yes wrangler@3 pages deploy public --project-name=chrisallen --branch="$DRONE_BRANCH"
+        fi
+    when:
+      branch:
+        include: [ main, feature/*, fix/* ]
 
-          echo "Zone ID: $CF_ZONE_ID"
-          echo "Token length: ${#CF_API_TOKEN}"
+  - name: submit IndexNow (main only)
+    image: python:3.11-alpine
+    when:
+      branch: [ main ]
+    environment:
+      INDEXNOW_KEY:
+        from_secret: INDEXNOW_KEY       # optional; matches https://chrisallen.us/<key>.txt
+    commands:
+      - pip install --no-cache-dir requests
+      - |
+        python <<'PY'
+        import json, os, pathlib, sys, requests
+        key = os.environ.get("INDEXNOW_KEY", "51ccd95176a34334891dc90cab8d3dc7")
+        host = "chrisallen.us"
+        p = pathlib.Path("changed_urls.txt")
+        urls = [u.strip() for u in p.read_text().splitlines() if u.strip()] if p.exists() and p.stat().st_size > 0 else []
+        if not urls:
+            print("IndexNow: no URLs, skipping.")
+            sys.exit(0)
 
-          if [ -s changed_urls.txt ]; then
-            URLS=$(awk NF changed_urls.txt | sed 's/^/"/;s/$/"/' | paste -sd "," -)
-            JSON="{\"files\":[${URLS}]}"
-            echo "Cloudflare JSON payload:"
-            echo "${JSON}"
+        payload = {
+            "host": host,
+            "key": key,
+            "keyLocation": f"https://{host}/{key}.txt",
+            "urlList": urls
+        }
+        print("IndexNow payload:", json.dumps(payload, indent=2)[:800])
 
-            curl -v -X POST "https://api.cloudflare.com/client/v4/zones/${CF_ZONE_ID}/purge_cache" \
-              -H "Authorization: Bearer ${CF_API_TOKEN}" \
-              -H "Content-Type: application/json" \
-              --data "${JSON}"
-          else
-            echo "No changed URLs to purge."
-          fi
-
-
+        try:
+            r = requests.post("https://api.indexnow.org/indexnow", json=payload, timeout=30)
+            print("IndexNow response:", r.status_code, r.text[:500])
+        except Exception as e:
+            # Don't ever block deploy over IndexNow
+            print("IndexNow error (ignored):", e)
+        PY
