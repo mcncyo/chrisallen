@@ -27,8 +27,9 @@ class SitemapProcessor:
         self.max_batch = 10_000
         self.session = requests.Session()
         self.session.headers.update({
-            'User-Agent': 'ComputerHacking101/1.0',
-            'Content-Type': 'application/json'
+            'User-Agent': 'ChrisAllen/1.0',
+            'Content-Type': 'application/json; charset=utf-8',
+            'Host': host
         })
 
     def fetch(self, url: str, max_retries: int = 3, timeout: int = 30) -> Optional[str]:
@@ -137,13 +138,17 @@ class SitemapProcessor:
         return total_sent
 
     def _submit_batch(self, urls: List[str], max_retries: int = 3) -> bool:
-        """Submit a single batch of URLs to IndexNow."""
+        """Submit a single batch of URLs to IndexNow with improved error handling."""
         payload = {
             "host": self.host,
             "key": self.key,
             "keyLocation": self.key_url,
             "urlList": urls
         }
+        
+        logger.info(f"Submitting batch of {len(urls)} URLs to IndexNow...")
+        logger.debug(f"Using key: {self.key}")
+        logger.debug(f"Key location: {self.key_url}")
         
         for attempt in range(max_retries):
             try:
@@ -153,33 +158,39 @@ class SitemapProcessor:
                     timeout=30
                 )
                 
-                if response.status_code in (200, 202):
+                if response.status_code == 200:
+                    logger.info("Successfully submitted batch to IndexNow")
                     return True
-                    
-                if response.status_code == 429:  # Rate limited
-                    retry_after = int(response.headers.get('Retry-After', 60))
-                    logger.warning(f"Rate limited. Waiting {retry_after} seconds...")
-                    time.sleep(retry_after)
-                    continue
-                    
-                logger.error(
-                    f"IndexNow API error (attempt {attempt + 1}): "
-                    f"HTTP {response.status_code} - {response.text[:200]}"
-                )
                 
+                error_msg = f"IndexNow API error (attempt {attempt + 1}): HTTP {response.status_code}"
+                if response.text:
+                    error_msg += f" - {response.text}"
+                logger.error(error_msg)
+                
+                # If we get a 403, no point in retrying with the same key
+                if response.status_code == 403:
+                    logger.error("Authentication failed. Please verify:")
+                    logger.error(f"1. The key file is accessible at: {self.key_url}")
+                    logger.error(f"2. The key in the file matches: {self.key}")
+                    logger.error(f"3. The host is correctly set to: {self.host}")
+                    return False
+                
+            except requests.exceptions.RequestException as e:
+                logger.error(f"Network error submitting to IndexNow (attempt {attempt + 1}): {str(e)}")
             except Exception as e:
-                logger.error(f"Request error (attempt {attempt + 1}): {str(e)}")
+                logger.error(f"Unexpected error (attempt {attempt + 1}): {str(e)}")
             
-            # Exponential backoff
-            wait_time = (2 ** attempt) * 5
-            logger.info(f"Retrying in {wait_time} seconds...")
-            time.sleep(wait_time)
+            if attempt < max_retries - 1:
+                wait_time = (2 ** attempt) * 5  # Exponential backoff
+                logger.info(f"Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
         
+        logger.error(f"Failed to submit batch after {max_retries} attempts")
         return False
 
 def main():
     # Get configuration from environment
-    host = os.environ.get('SITE_HOST', 'computerhacking101.com')
+    host = os.environ.get('SITE_HOST', 'chrisallen.us')
     key = os.environ.get('INDEXNOW_KEY', '')
     
     if not key:
@@ -187,6 +198,8 @@ def main():
         sys.exit(1)
     
     logger.info(f"Starting IndexNow submission for {host}")
+    logger.info(f"Using key: {key}")
+    logger.info(f"Key file URL: https://{host}/{key}.txt")
     
     try:
         # Initialize processor
