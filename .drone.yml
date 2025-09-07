@@ -81,6 +81,12 @@ steps:
       - echo "Starting build setup..."
       - echo "Building with the following content files:"
       - find content -type f -name "*.md" | wc -l
+      - echo "Initializing git submodules (themes, etc.)..."
+      - git submodule update --init --recursive || true
+      - git config --global --add safe.directory /drone/src || true
+      - git config --global user.email "ci@local" || true
+      - git config --global user.name "Drone CI" || true
+      - echo "Theme directory contents:" && ls -la themes || true
       
       # Install Node.js and npm
       - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
@@ -97,17 +103,20 @@ steps:
         curl -fsSL -o "/tmp/${HUGO_TGZ}" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_TGZ}"
         tar -xzf "/tmp/${HUGO_TGZ}" -C /usr/local/bin hugo
         /usr/local/bin/hugo version
+      - echo "Count of draft posts:" && /usr/local/bin/hugo list drafts | wc -l || true
+      - echo "Count of future posts:" && /usr/local/bin/hugo list future | wc -l || true
+      - echo "Count of expired posts:" && /usr/local/bin/hugo list expired | wc -l || true
       
-      # Update and clean Hugo modules (now that hugo is installed)
-      - hugo mod get -u
-      - hugo mod tidy
+      # Show Hugo configuration and environment
+      - hugo config | sed -n '1,200p' || true
       
       # List all content files
       - echo "Content files to be built:"
       - find content -type f -name "*.md" | sort
       
-      # Modules already tidied above; keep here for clarity in logs
-      - echo "Hugo modules have been updated and tidied."
+      # Show layouts present
+      - echo "Root layouts directory:" && ls -la layouts || true
+      - echo "Theme layouts directory:" && ls -la themes/gokarna/layouts || true
       
       # Build the Hugo site with verbose output
       - |
@@ -120,11 +129,13 @@ steps:
           --cleanDestinationDir \
           --ignoreCache \
           --buildDrafts=true \
-          --buildFuture=false \
+          --buildFuture=true \
           --buildExpired=true \
           --baseURL "https://chrisallen.us/" \
           --templateMetrics \
           --templateMetricsHints \
+          --printPathWarnings \
+          --printI18nWarnings \
           --logLevel info
       
       # Verify build output
