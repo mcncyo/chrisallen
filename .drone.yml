@@ -59,22 +59,19 @@ steps:
       - set -eux
       
       # Install dependencies
-      - apt-get update && apt-get install -y --no-install-recommends \
+      - |
+        apt-get update && apt-get install -y --no-install-recommends \
           wget \
           git \
           ca-certificates \
           build-essential \
           libpcre3-dev \
-          libpcre++-dev \
           libpcre2-dev \
           libpcre2-8-0 \
           libpcre2-16-0 \
           libpcre2-32-0 \
           libpcre2-posix3 \
-          libpcre2-dev \
           libpcre2-ocaml-dev \
-          libpcre2-ocaml \
-          libpcre2-posix3 \
           pkg-config \
           gcc \
           g++ \
