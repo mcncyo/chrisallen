@@ -97,16 +97,12 @@ steps:
       - test -f package.json && (npm ci || npm install) || true
       - export PATH="$PATH:$(pwd)/node_modules/.bin"
       
-      # Install Hugo extended binary
+      # Install Hugo extended binary (hardcoded v0.147.6)
       - |
         set -eux
-        HUGO_VERSION_STR=0.147.6
-        printf 'Using HUGO_VERSION=%s\n' "$HUGO_VERSION_STR"
-        HUGO_TGZ="hugo_extended_${HUGO_VERSION_STR}_Linux-64bit.tar.gz"
-        HUGO_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION_STR}/${HUGO_TGZ}"
-        printf 'Downloading: %s\n' "$HUGO_URL"
-        curl -fL -o "/tmp/${HUGO_TGZ}" "$HUGO_URL"
-        tar -xzf "/tmp/${HUGO_TGZ}" -C /usr/local/bin hugo
+        echo 'Downloading Hugo v0.147.6...'
+        curl -fL -o /tmp/hugo.tar.gz https://github.com/gohugoio/hugo/releases/download/v0.147.6/hugo_extended_0.147.6_Linux-64bit.tar.gz
+        tar -xzf /tmp/hugo.tar.gz -C /usr/local/bin hugo
         /usr/local/bin/hugo version
       - echo "Count of draft posts:" && /usr/local/bin/hugo list drafts | wc -l || true
       - echo "Count of future posts:" && /usr/local/bin/hugo list future | wc -l || true
