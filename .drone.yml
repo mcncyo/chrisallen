@@ -36,13 +36,15 @@ steps:
   # Output: Compiled site in /public directory
   # Dependencies: Hugo modules, npm packages
   - name: build-hugo
-    # Using official Hugo extended image
-    image: docker.io/klakegg/hugo:ext-ubuntu  # Using the latest extended version
+    # Using Ubuntu base image to build Hugo from source
+    image: ubuntu:22.04
     
     # Environment variables
     environment:
+      HUGO_VERSION: 0.147.6  # Match your local version
       HUGO_ENV: production
       TZ: America/Chicago
+      DEBIAN_FRONTEND: noninteractive
     
     # Volume mounts for caching
     volumes:
@@ -56,6 +58,33 @@ steps:
       # Enable error handling and debugging
       - set -eux
       
+      # Install dependencies
+      - apt-get update && apt-get install -y --no-install-recommends \
+          wget \
+          git \
+          ca-certificates \
+          build-essential \
+          libpcre3-dev \
+          libpcre++-dev \
+          libpcre2-dev \
+          libpcre2-8-0 \
+          libpcre2-16-0 \
+          libpcre2-32-0 \
+          libpcre2-posix3 \
+          libpcre2-dev \
+          libpcre2-ocaml-dev \
+          libpcre2-ocaml \
+          libpcre2-posix3 \
+          pkg-config \
+          gcc \
+          g++ \
+          make \
+          cmake \
+          curl \
+          gnupg \
+          xz-utils \
+          python3
+      
       # Display Hugo version and environment info
       - hugo version
       - echo "Building with the following content files:"
@@ -65,13 +94,44 @@ steps:
       - hugo mod get -u
       - hugo mod tidy
       
+      # Install Go
+      - wget -q -O - https://dl.google.com/go/go1.21.0.linux-amd64.tar.gz | tar -xz -C /usr/local
+      - export PATH=$PATH:/usr/local/go/bin
+      
+      # Install Node.js and npm
+      - curl -fsSL https://deb.nodesource.com/setup_18.x | bash -
+      - apt-get install -y nodejs
+      
       # Install npm dependencies if package.json exists
       - test -f package.json && (npm ci || npm install) || true
       - export PATH="$PATH:$(pwd)/node_modules/.bin"
       
-      # Debug: List all content files
+      # Build Hugo from source
+      - |
+        set -x
+        # Clone Hugo
+        git clone --depth 1 --branch v${HUGO_VERSION} https://github.com/gohugoio/hugo.git /tmp/hugo
+        cd /tmp/hugo
+        
+        # Build Hugo
+        go install --tags extended
+        
+        # Verify installation
+        /root/go/bin/hugo version
+        
+        # Make it available system-wide
+        mv /root/go/bin/hugo /usr/local/bin/
+        
+        # Back to the project directory
+        cd /drone/src
+      
+      # List all content files
       - echo "Content files to be built:"
       - find content -type f -name "*.md" | sort
+      
+      # Update and clean Hugo modules
+      - hugo mod get -u
+      - hugo mod tidy
       
       # Build the Hugo site with verbose output
       - |
@@ -90,10 +150,13 @@ steps:
           --templateMetrics \
           --templateMetricsHints \
           --logLevel info
-          
-      # Debug: Count output files
+      
+      # Verify build output
       - echo "Number of HTML files generated:"
       - find public -type f -name "*.html" | wc -l
+      
+      # List all generated files for debugging
+      - find public -type f | sort
 
   # ============================================
   # 2. Verify Sitemap
