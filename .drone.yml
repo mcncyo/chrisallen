@@ -284,7 +284,9 @@ steps:
       # Make the IndexNow script executable
       - chmod +x .drone/scripts/indexnow.py
       
-      # Run the IndexNow submission script with the correct key file
+      # Ensure the key file is in the root of the public directory
+      - cp static/51ccd95176a34334891dc90cab8d3dc7.txt public/
+      # Run the IndexNow submission script with the correct key file and host
       - SITE_HOST=chrisallen.us INDEXNOW_KEY=51ccd95176a34334891dc90cab8d3dc7 .drone/scripts/indexnow.py
 
   # ============================================
