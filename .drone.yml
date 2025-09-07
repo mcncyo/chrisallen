@@ -118,9 +118,7 @@ steps:
       
       # Count number of URLs in sitemap
       - grep -c "<url>" public/sitemap.xml || true
-      
-      # Check for tutorial URLs in sitemap
-      - grep -n "/tutorials/" public/sitemap.xml | head -n 20 || true
+
       
       # Print first 80 lines of sitemap for debugging
       - sed -n '1,80p' public/sitemap.xml
