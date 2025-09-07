@@ -100,11 +100,10 @@ steps:
       # Install Hugo extended binary
       - |
         set -eux
-        # Ensure HUGO_VERSION is set (fallback) and export it for this shell
-        export HUGO_VERSION="${HUGO_VERSION:-0.147.6}"
-        printf 'Using HUGO_VERSION=%s\n' "$HUGO_VERSION"
-        HUGO_TGZ="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
-        HUGO_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_TGZ}"
+        HUGO_VERSION_STR=0.147.6
+        printf 'Using HUGO_VERSION=%s\n' "$HUGO_VERSION_STR"
+        HUGO_TGZ="hugo_extended_${HUGO_VERSION_STR}_Linux-64bit.tar.gz"
+        HUGO_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION_STR}/${HUGO_TGZ}"
         printf 'Downloading: %s\n' "$HUGO_URL"
         curl -fL -o "/tmp/${HUGO_TGZ}" "$HUGO_URL"
         tar -xzf "/tmp/${HUGO_TGZ}" -C /usr/local/bin hugo
