@@ -284,8 +284,8 @@ steps:
       # Make the IndexNow script executable
       - chmod +x .drone/scripts/indexnow.py
       
-      # Run the IndexNow submission script
-      - SITE_HOST=chrisallen.us .drone/scripts/indexnow.py
+      # Run the IndexNow submission script with the correct key file
+      - SITE_HOST=chrisallen.us INDEXNOW_KEY=51ccd95176a34334891dc90cab8d3dc7 .drone/scripts/indexnow.py
 
   # ============================================
   # 6. Warm Cache
