@@ -1,9 +1,9 @@
 #!/bin/sh
 set -euo pipefail
 
-SITEMAP_ROOT="${1:-https://computerhacking101.com/sitemap.xml}"  # Allow override via CLI arg
+SITEMAP_ROOT="${1:-https://chrisallen.us/sitemap.xml}"  # Allow override via CLI arg
 CONCURRENCY=10
-EXTRA_URLS="${2:-https://computerhacking101.com/ https://www.computerhacking101.com/}"  # Allow override
+EXTRA_URLS="${2:-https://chrisallen.us/ https://www.chrisallen.us/}"  # Allow override
 TEMP_DIR="/tmp/warm_cache_$(date +%s)"
 mkdir -p "$TEMP_DIR"
 
