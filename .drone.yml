@@ -36,51 +36,46 @@ steps:
   # Output: Compiled site in /public directory
   # Dependencies: Hugo modules, npm packages
   - name: build-hugo
-    # Image with Hugo and common extensions pre-installed
-    image: hugomods/hugo:exts
+    # Using the exact Hugo version that matches local environment
+    image: klakegg/hugo:0.147.6-ext-ubuntu  # Matches local version: v0.147.6-0a5fd8e
     
     # Environment variables
     environment:
-      HUGO_ENV: production  # Set Hugo environment to production
-      TZ: America/Chicago   # Set timezone for consistent builds
+      HUGO_ENV: production
+      TZ: America/Chicago
     
     # Volume mounts for caching
     volumes:
       - name: cache_hugo
-        path: /root/.cache/hugo  # Cache directory for Hugo
+        path: /root/.cache/hugo
       - name: cache_npm
-        path: /root/.npm         # Cache directory for npm
+        path: /root/.npm
     
     # Commands to execute in the container
     commands:
       # Enable error handling and debugging
-      - set -eux  # -e: exit on error, -u: fail on undefined variables, -x: print commands
+      - set -eux
       
-      # Display Hugo version for debugging
+      # Display Hugo version and environment info
       - hugo version
+      - echo "Building with the following content files:"
+      - find content -type f -name "*.md" | wc -l
       
       # Update and clean Hugo modules
-      - hugo mod get -u  # Update modules to latest versions
-      - hugo mod tidy    # Remove unused modules
+      - hugo mod get -u
+      - hugo mod tidy
       
       # Install npm dependencies if package.json exists
       - test -f package.json && (npm ci || npm install) || true
-      
-      # Add local node modules to PATH
       - export PATH="$PATH:$(pwd)/node_modules/.bin"
       
-      # Build the Hugo site with production settings
+      # Debug: List all content files
+      - echo "Content files to be built:"
+      - find content -type f -name "*.md" | sort
+      
+      # Build the Hugo site with verbose output
       - |
-        # --minify: Minify HTML, CSS, JS, etc.
-        # --gc: Run some cleanup tasks after build
-        # --enableGitInfo: Add Git revision information
-        # --environment: Set build environment
-        # --cleanDestinationDir: Remove old files from destination
-        # --ignoreCache: Ignore the cache directory
-        # --buildDrafts: Don't build draft content
-        # --buildFuture: Don't build content with future publish dates
-        # --buildExpired: Don't build expired content
-        # --baseURL: Set the base URL for absolute links
+        set -x
         hugo \
           --minify \
           --gc \
@@ -88,10 +83,17 @@ steps:
           --environment production \
           --cleanDestinationDir \
           --ignoreCache \
-          --buildDrafts=false \
+          --buildDrafts=true \
           --buildFuture=false \
-          --buildExpired=false \
-          --baseURL "https://chrisallen.us/"
+          --buildExpired=true \
+          --baseURL "https://chrisallen.us/" \
+          --templateMetrics \
+          --templateMetricsHints \
+          --logLevel info
+          
+      # Debug: Count output files
+      - echo "Number of HTML files generated:"
+      - find public -type f -name "*.html" | wc -l
 
   # ============================================
   # 2. Verify Sitemap
