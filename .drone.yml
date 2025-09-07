@@ -20,6 +20,7 @@ name: ChrisAllen – Deploy Hugo site (Cloudflare Pages)
 #   - Consider increasing for faster clones if full history isn't needed
 clone:
   depth: 0
+  submodules: true
 
 # Pipeline Steps
 # --------------
@@ -41,7 +42,7 @@ steps:
     
     # Environment variables
     environment:
-      HUGO_VERSION: 0.147.6  # Match your local version
+      HUGO_VERSION: "0.147.6"  # Match your local version (quoted to preserve as string)
       HUGO_ENV: production
       TZ: America/Chicago
       DEBIAN_FRONTEND: noninteractive
@@ -99,6 +100,9 @@ steps:
       # Install Hugo extended binary
       - |
         set -x
+        # Ensure HUGO_VERSION is set (fallback to the expected version if empty)
+        HUGO_VERSION="${HUGO_VERSION:-0.147.6}"
+        echo "Using HUGO_VERSION=${HUGO_VERSION}"
         HUGO_TGZ="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
         curl -fsSL -o "/tmp/${HUGO_TGZ}" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_TGZ}"
         tar -xzf "/tmp/${HUGO_TGZ}" -C /usr/local/bin hugo
@@ -108,7 +112,7 @@ steps:
       - echo "Count of expired posts:" && /usr/local/bin/hugo list expired | wc -l || true
       
       # Show Hugo configuration and environment
-      - hugo config | sed -n '1,200p' || true
+      - /usr/local/bin/hugo config | sed -n '1,200p' || true
       
       # List all content files
       - echo "Content files to be built:"
@@ -121,7 +125,7 @@ steps:
       # Build the Hugo site with verbose output
       - |
         set -x
-        hugo \
+        /usr/local/bin/hugo \
           --minify \
           --gc \
           --enableGitInfo \
