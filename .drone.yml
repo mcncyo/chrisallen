@@ -99,12 +99,14 @@ steps:
       
       # Install Hugo extended binary
       - |
-        set -x
-        # Ensure HUGO_VERSION is set (fallback to the expected version if empty)
-        HUGO_VERSION="${HUGO_VERSION:-0.147.6}"
-        echo "Using HUGO_VERSION=${HUGO_VERSION}"
+        set -eux
+        # Ensure HUGO_VERSION is set (fallback) and export it for this shell
+        export HUGO_VERSION="${HUGO_VERSION:-0.147.6}"
+        printf 'Using HUGO_VERSION=%s\n' "$HUGO_VERSION"
         HUGO_TGZ="hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
-        curl -fsSL -o "/tmp/${HUGO_TGZ}" "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_TGZ}"
+        HUGO_URL="https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/${HUGO_TGZ}"
+        printf 'Downloading: %s\n' "$HUGO_URL"
+        curl -fL -o "/tmp/${HUGO_TGZ}" "$HUGO_URL"
         tar -xzf "/tmp/${HUGO_TGZ}" -C /usr/local/bin hugo
         /usr/local/bin/hugo version
       - echo "Count of draft posts:" && /usr/local/bin/hugo list drafts | wc -l || true
