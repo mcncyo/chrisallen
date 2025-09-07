@@ -167,12 +167,18 @@ class SitemapProcessor:
                     error_msg += f" - {response.text}"
                 logger.error(error_msg)
                 
-                # If we get a 403, no point in retrying with the same key
+                # Check for known error conditions
                 if response.status_code == 403:
                     logger.error("Authentication failed. Please verify:")
                     logger.error(f"1. The key file is accessible at: {self.key_url}")
                     logger.error(f"2. The key in the file matches: {self.key}")
                     logger.error(f"3. The host is correctly set to: {self.host}")
+                    return False
+                
+                # Handle service outages
+                if response.status_code == 400 and "services aren't available right now" in response.text:
+                    logger.warning("IndexNow service is currently unavailable. This is a temporary issue on their end.")
+                    logger.warning("Your sitemap will be submitted during the next build when the service is back online.")
                     return False
                 
             except requests.exceptions.RequestException as e:
@@ -218,9 +224,17 @@ def main():
         
         # Submit to IndexNow
         logger.info("Starting submission to IndexNow...")
+        logger.info("Note: If IndexNow service is temporarily unavailable, "
+                  "your sitemap will be submitted during the next build.")
+        
         sent = processor.submit_to_indexnow(list(urls))
         
-        logger.info(f"Successfully submitted {sent}/{len(urls)} URLs to IndexNow")
+        if sent > 0:
+            logger.info(f"Successfully submitted {sent}/{len(urls)} URLs to IndexNow")
+        else:
+            logger.warning("No URLs were submitted to IndexNow. This might be due to a temporary service outage.")
+            logger.warning("The build will continue, and your site will still be deployed.")
+            logger.warning("Search engines will still be able to discover your content through the sitemap.")
         
     except KeyboardInterrupt:
         logger.info("Operation cancelled by user")
