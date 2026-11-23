@@ -34,3 +34,6 @@ themes/
 .hugo_build.lock
 
 .envrc
+
+# Serena agent cache
+.serena/
