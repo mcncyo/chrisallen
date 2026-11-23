@@ -33,3 +33,4 @@ themes/
 # Optional: ignore the build lock
 .hugo_build.lock
 
+.envrc
