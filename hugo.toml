@@ -25,7 +25,6 @@ title = "Chris Allen's personal site"
 [params]
   avatarAltText = "avatar"
   avatarSize = "size-m"
-  avatarURL = "/images/avatar.webp"
 
   customHeadHTML = """
     <!-- KaTeX -->
@@ -49,13 +48,12 @@ title = "Chris Allen's personal site"
   """
 
   description = "Sky above, sand below and peace within"
-  footer = "Chris Alen"
+  footer = "Chris Allen"
   metaKeywords = ["blog", "gokarna", "hugo"]
   showBackToTopButton = true # true or false for "back to top" button on posts and pages
 
   socialIcons = [
-    {name = "twitter", url = "https://example.com"},
-    {name = "linkedin", url = "https://example.com"},
+        {name = "linkedin", url = "https://www.linkedin.com/in/mcncyo"},
 
 
   ]
